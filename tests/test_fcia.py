@@ -10,6 +10,8 @@ def test_fcia_agent():
     result = fcia_agent(fcia_input)
     print("result of the agent fcia :",result)
     assert isinstance(result.identified_gaps, list)
+    for gap in result.identified_gaps:
+        assert isinstance(gap, dict)
     assert isinstance(result.affected_clauses, list)
     assert isinstance(result.user_context, str)
     assert isinstance(result.FAS_reference, (str, list)) 

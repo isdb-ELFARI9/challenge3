@@ -52,7 +52,6 @@ def retrieve_knowledge_from_pinecone_fas(query: str, fas_namespace: str) -> str:
     embedding = get_embedding(query)
     # Query Pinecone for the top 2 matches in the correct namespace
     result = index_fas.query(vector=embedding, top_k=2, namespace=fas_namespace, include_metadata=True)
-    print("result of the query pinecone fas :",result)
     if result and result.matches:
         # Concatenate the text of the top matches
         return '\n'.join([m.metadata.get('text', '') for m in result.matches])
@@ -60,36 +59,40 @@ def retrieve_knowledge_from_pinecone_fas(query: str, fas_namespace: str) -> str:
 
 def build_arda_prompt(shariah_update, FAS, user_context, knowledge: str) -> str:
     return (
-        f"You are the Accounting Rules Definition Agent (ARDA) for an Islamic finance standards review system.\n\n"
-        f"Role: You are an expert Islamic finance accountant and standards developer.\n\n"
-        f"Your job is to:\n"
-        f"- Analyze the Shariah-compliant process/solution and user context in light of the relevant FAS.\n"
-        f"- Use the provided FAS knowledge base to propose updated or new accounting rules/clauses for the FAS.\n"
-        f"- For each clause, provide a clear rationale and reference to relevant standards.\n"
-        f"- Output your findings in a structured JSON format with the following fields:\n"
-        f"  - updated_accounting_clauses: a list of new or revised accounting clauses, each as a JSON object with at least the following fields:\n"
-        f"      - clause_id: a unique identifier for the clause (e.g., 'FAS4.DM.ACC1')\n"
-        f"      - text: the full text of the clause\n"
-        f"      - reference: (optional) the FAS or other standard supporting this clause\n"
-        f"  - rationale: a concise justification for the changes, including chain-of-thought reasoning.\n"
-        f"  - references: a list of FAS or other standards used.\n\n"
-        f"Example output:\n"
-        f"{{\n"
-        f"  \"updated_accounting_clauses\": [\n"
-        f"    {{\n"
-        f"      \"clause_id\": \"FAS4.DM.ACC1\",\n"
-        f"      \"text\": \"The accounting for diminishing Musharaka must recognize the gradual transfer of ownership as a series of separate transactions...\",\n"
-        f"      \"reference\": \"FAS 4, FAS 32\"\n"
-        f"    }}\n"
-        f"  ],\n"
-        f"  \"rationale\": \"The new clause clarifies the accounting for diminishing Musharaka in line with the Shariah solution and ensures consistency with FAS 4 and FAS 32.\",\n"
-        f"  \"references\": [\"FAS 4\", \"FAS 32\"]\n"
-        f"}}\n\n"
+        "You are the Accounting Rules Definition Agent (ARDA) for an Islamic finance standards review system.\n\n"
+        "Role: You are a senior Islamic finance accountant and FAS standards developer.\n\n"
+        "Your task is to:\n"
+        "1. Analyze the Shariah-compliant process/solution and user context in light of the relevant FAS.\n"
+        "2. Consult the provided FAS knowledge base for relevant accounting principles, rules, and precedents.\n"
+        "3. Propose updated or new accounting rules/clauses for the FAS, ensuring:\n"
+        "   - Alignment with the Shariah update\n"
+        "   - Consistency with FAS and, where relevant, IFRS or AAOIFI standards\n"
+        "   - Practical applicability for IFIs\n"
+        "4. For each clause, provide:\n"
+        "   - clause_id: a unique identifier (e.g., 'FAS4.DM.ACC1')\n"
+        "   - text: the full text of the clause\n"
+        "   - reference: (optional) the FAS or other standard supporting this clause\n"
+        "5. For the rationale, explain:\n"
+        "   - Why each change is needed\n"
+        "   - How it addresses the gap and aligns with Shariah and accounting best practices\n"
+        "6. List all references used.\n\n"
+        "Output your findings in the following JSON format:\n"
+        "{\n"
+        "  \"updated_accounting_clauses\": [\n"
+        "    {\n"
+        "      \"clause_id\": \"FAS4.DM.ACC1\",\n"
+        "      \"text\": \"The accounting for diminishing Musharaka must recognize the gradual transfer of ownership as a series of separate transactions...\",\n"
+        "      \"reference\": \"FAS 4, FAS 32\"\n"
+        "    }\n"
+        "  ],\n"
+        "  \"rationale\": \"The new clause clarifies the accounting for diminishing Musharaka in line with the Shariah solution and ensures consistency with FAS 4 and FAS 32. This addresses the gap in equity transfer and profit allocation.\",\n"
+        "  \"references\": [\"FAS 4\", \"FAS 32\", \"IFRS 15\"]\n"
+        "}\n\n"
         f"Knowledge base context:\n{knowledge}\n\n"
         f"Shariah update:\n{shariah_update}\n\n"
         f"User context:\n{user_context}\n\n"
         f"FAS to review:\n{FAS}\n\n"
-        f"Respond ONLY with the JSON object."
+        "Respond ONLY with the JSON object."
     )
 
 def arda_agent(arda_input: ARDAInput) -> ARDAOutput:
