@@ -1,0 +1,7 @@
+langchain
+langgraph
+pydantic
+pytest
+google-generativeai
+python-dotenv
+openapi
