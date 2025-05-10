@@ -8,7 +8,6 @@ def test_owe_agent():
     )
     result = owe_agent(user_prompt)
     print(result)
-    assert "updated_fas_document" in result
-    assert "change_log" in result
-    assert "references" in result
-    assert "reasoning_trace" in result 
+    assert "document" in result
+    assert "change_summary" in result
+    assert "reasoning_trace" in result

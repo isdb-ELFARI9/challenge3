@@ -3,6 +3,8 @@ from agents.fcia import fcia_agent
 from agents.spia import spia_agent
 from agents.arda import arda_agent
 from agents.stsa import stsa_agent
+from agents.document_composer import document_composer_agent
+from agents.change_summary import change_summary_agent
 from schemas.uiria import UIRIAInput, UIRIAOutput
 from schemas.fcia import FCIAInput, FCIAOutput
 from schemas.spia import SPIAInput, SPIAOutput
@@ -94,11 +96,30 @@ def owe_agent(user_prompt: str) -> dict:
     stsa_out: STSAOutput = stsa_agent(stsa_in)
     reasoning_trace["stsa"] = stsa_out.model_dump()
 
+    # Step 6: Document Composer - Build the final document
+    document = document_composer_agent(
+        user_context=uiria_out.context,
+        spia_out=spia_out.model_dump(),
+        arda_out=arda_out.model_dump(),
+        stsa_out=stsa_out.model_dump(),
+        reasoning_trace=reasoning_trace
+    )
+
+    # Step 7: Change Summary - Generate user-facing summary
+    change_summary = change_summary_agent(
+        change_log=stsa_out.change_log,
+        reasoning_trace=reasoning_trace,
+        user_context=uiria_out.context
+    )
+
     # Compose the final output for UIRIA/user
     return {
-        "updated_fas_document": stsa_out.all_updated_sections,
-        "change_log": stsa_out.change_log,
-        "references": stsa_out.references,
+        "document": document,
+        "change_summary": change_summary,
         "reasoning_trace": reasoning_trace,
-        "explainability": "Each agent received augmented context including summaries and reasoning trace from previous steps for maximum accuracy."
+        "old_outputs": {
+            "updated_fas_document": stsa_out.all_updated_sections,
+            "change_log": stsa_out.change_log,
+            "references": stsa_out.references,
+        }
     } 
