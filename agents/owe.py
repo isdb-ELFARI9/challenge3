@@ -1,3 +1,5 @@
+from typing import Dict, Any
+from schemas.owe import OWEInput, OWEOutput
 from agents.uiria import uiria_agent
 from agents.fcia import fcia_agent
 from agents.spia import spia_agent
@@ -5,11 +7,15 @@ from agents.arda import arda_agent
 from agents.stsa import stsa_agent
 from agents.document_composer import document_composer_agent
 from agents.change_summary import change_summary_agent
+from agents.fas_diff import fas_diff_agent, update_markdown_with_changes, save_changes_to_markdown
 from schemas.uiria import UIRIAInput, UIRIAOutput
 from schemas.fcia import FCIAInput, FCIAOutput
 from schemas.spia import SPIAInput, SPIAOutput
 from schemas.arda import ARDAInput, ARDAOutput
 from schemas.stsa import STSAInput, STSAOutput
+from schemas.fas_diff import FASDiffInput
+from utils.fas_utils import get_fas_namespace
+import json
 
 # Utility to map FAS to namespace
 
@@ -112,14 +118,65 @@ def owe_agent(user_prompt: str) -> dict:
         user_context=uiria_out.context
     )
 
-    # Compose the final output for UIRIA/user
+    # Add document and change summary to the reasoning trace
+    reasoning_trace["document"] = document
+    reasoning_trace["change_summary"] = change_summary
+
+    print(document, reasoning_trace, change_summary)
+
+    # Get original sections from STSA output for comparison with document content
+    original_sections = stsa_out.original_sections
+
+    # After document composition, analyze differences
+    fas_diff_input = FASDiffInput(
+        old_fas_markdown=json.dumps(original_sections, indent=2),
+        new_fas_markdown=json.dumps(document, indent=2),#the changes not really the ew markdown file
+        fas_number=uiria_out.identified_FAS,
+        context=uiria_out.context,
+        multi_agent_reasoning=reasoning_trace
+    )
+    
+    diff_analysis = fas_diff_agent(fas_diff_input)
+    print("diff_analysis", diff_analysis)
+    
+    # Process diff_analysis for JSON serialization
+    diff_dict = {}
+    if hasattr(diff_analysis, "to_dict"):
+        diff_dict = diff_analysis.to_dict()
+    else:
+        diff_dict = {
+            "changes": [change.to_dict() for change in diff_analysis.changes],
+            "key_changes_summary": diff_analysis.key_changes_summary,
+            "change_statistics": diff_analysis.change_statistics
+        }
+    
+    reasoning_trace["fas_diff"] = diff_dict
+    
+    # Update the document with key changes section
+    final_document = update_markdown_with_changes(json.dumps(document, indent=2), diff_analysis.key_changes_summary)
+    
+    # Save comprehensive changes to file
+    changes_file = save_changes_to_markdown(
+        diff_analysis.changes,
+        uiria_out.identified_FAS,
+        final_document,
+        change_summary,
+        reasoning_trace
+    )
+    print(f"Detailed changes saved to: {changes_file}")
+    
+    # Compose the final output
     return {
-        "document": document,
+        "document": final_document,
         "change_summary": change_summary,
         "reasoning_trace": reasoning_trace,
         "old_outputs": {
             "updated_fas_document": stsa_out.all_updated_sections,
             "change_log": stsa_out.change_log,
             "references": stsa_out.references,
-        }
+            "detailed_changes": [change.to_dict() for change in diff_analysis.changes],
+            "change_statistics": diff_analysis.change_statistics
+        },
+        "diff":diff_analysis
+    
     } 

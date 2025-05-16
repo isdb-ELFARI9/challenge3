@@ -4,6 +4,8 @@ import os
 import json
 from pinecone import Pinecone
 import openai
+from utils.pinecone_utils import retrieve_knowledge_from_pinecone_fas
+from utils.fas_utils import get_fas_namespace
 
 # Pinecone configuration from environment
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
@@ -57,50 +59,67 @@ def retrieve_knowledge_from_pinecone_fas(query: str, fas_namespace: str) -> str:
         return '\n'.join([m.metadata.get('text', '') for m in result.matches])
     return '[No relevant FAS document found]'
 
-def build_stsa_prompt(updated_shariah_section, updated_accounting_section, FAS, user_context, knowledge: str) -> str:
-    return (
-        "You are the Standard Text & Structure Agent (STSA) for an Islamic finance standards review system.\n\n"
-        "Role: You are a senior editor and architect of Islamic finance standards, responsible for clarity, structure, and regulatory compliance.\n\n"
-        "Your task is to:\n"
-        "1. Review the updated Shariah and accounting sections.\n"
-        "2. Consult the FAS knowledge base for structure, terminology, and cross-references.\n"
-        "3. Integrate the new sections into the FAS, ensuring:\n"
-        "   - Consistency with existing sections and terminology\n"
-        "   - Logical flow and clear structure\n"
-        "   - Updates to related sections (e.g., definitions, disclosures, appendices) as needed\n"
-        "4. For each change, provide:\n"
-        "   - What was changed or added\n"
-        "   - Why the change was made (clarity, compliance, alignment, etc.)\n"
-        "   - Reference to the relevant FAS section or standard\n"
-        "5. Output your findings in the following JSON format:\n"
-        "{\n"
-        "  \"all_updated_sections\": {\n"
-        "    \"shariah\": { ... },\n"
-        "    \"accounting\": { ... },\n"
-        "    \"disclosure\": { ... },\n"
-        "    \"definitions\": { ... }\n"
-        "  },\n"
-        "  \"change_log\": [\n"
-        "    \"Added new Shariah section for diminishing Musharaka, referencing AAOIFI SS 12.\",\n"
-        "    \"Revised accounting section to clarify asset transfer and profit allocation, referencing FAS 4 and FAS 32.\",\n"
-        "    \"Updated disclosure section to require reporting of equity transfer schedule.\"\n"
-        "  ],\n"
-        "  \"references\": [\"FAS 4\", \"FAS 32\", \"AAOIFI SS 12\"]\n"
-        "}\n\n"
-        f"Knowledge base context:\n{knowledge}\n\n"
-        f"Updated Shariah section:\n{updated_shariah_section}\n\n"
-        f"Updated accounting section:\n{updated_accounting_section}\n\n"
-        f"User context:\n{user_context}\n\n"
-        f"FAS to review:\n{FAS}\n\n"
-        "Respond ONLY with the JSON object."
-    )
+def build_stsa_prompt(updated_shariah_section: dict, 
+                     updated_accounting_section: dict,
+                     fas: str,
+                     user_context: str,
+                     knowledge: str) -> str:
+    return f"""
+    You are an expert in Islamic finance standards. Your task is to update the FAS text and structure based on the provided updates.
+    
+    FAS: {fas}
+    User Context: {user_context}
+    
+    Updated Shariah Section:
+    {json.dumps(updated_shariah_section, indent=2)}
+    
+    Updated Accounting Section:
+    {json.dumps(updated_accounting_section, indent=2)}
+    
+    Relevant Knowledge:
+    {knowledge}
+    
+    Please provide a response in the following JSON format:
+    {{
+        "all_updated_sections": {{
+            "section_id": "updated content",
+            ...
+        }},
+        "original_sections": {{
+            "section_id": "original content",
+            ...
+        }},
+        "change_log": [
+            "Change 1",
+            "Change 2",
+            ...
+        ],
+        "references": [
+            "Reference 1",
+            "Reference 2",
+            ...
+        ]
+    }}
+    
+    Ensure that:
+    1. All sections are properly identified
+    2. Changes are clearly documented
+    3. References are properly cited
+    4. Original sections are preserved for comparison
+    """
 
 def stsa_agent(stsa_input: STSAInput) -> STSAOutput:
     fas_namespace = get_fas_namespace(stsa_input.FAS)
     # Use both updated sections as the query for best context
     query = f"{stsa_input.updated_shariah_section}\n{stsa_input.updated_accounting_section}"
     knowledge = retrieve_knowledge_from_pinecone_fas(query, fas_namespace)
-    prompt = build_stsa_prompt(stsa_input.updated_shariah_section, stsa_input.updated_accounting_section, stsa_input.FAS, stsa_input.user_context, knowledge)
+    prompt = build_stsa_prompt(
+        stsa_input.updated_shariah_section,
+        stsa_input.updated_accounting_section,
+        stsa_input.FAS,
+        stsa_input.user_context,
+        knowledge
+    )
     response = call_gemini_llm(prompt)
     response = response.strip()
     if response.startswith("```"):

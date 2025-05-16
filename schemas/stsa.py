@@ -10,5 +10,6 @@ class STSAInput(BaseModel):
 
 class STSAOutput(BaseModel):
     all_updated_sections: Dict[str, Any]
+    original_sections: Dict[str, Any] = Field(..., description="Original sections from the FAS before updates")
     change_log: List[str]
     references: List[str] 

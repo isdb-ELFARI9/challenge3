@@ -1,0 +1,291 @@
+{
+  "document": "\n## Key Changes from Previous FAS Version\n\nNo key changes detected\n\n{\n  \"pages\": [\n    {\n      \"title\": \"Title & Effective Date\",\n      \"content\": {\n        \"standard_number\": \"FAS 4 (Revised 2024)\",\n        \"title\": \"Accounting for Diminishing Musharaka in Real Estate Funds\",\n        \"example_title\": \"Accounting for Innovative Digital Assets\",\n        \"effective_date\": \"01 July 2024 (Gregorian) / 24 Muharram 1446 (Hijri)\",\n        \"issued_by\": \"AI-Driven Standard Enhancement System (Conceptual)\"\n      }\n    },\n    {\n      \"title\": \"Objective, Scope & Key Principles\",\n      \"content\": {\n        \"objective\": [\n          \"To provide specific guidance on the application of FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-\\u02bfaqd) structures.\",\n          \"To clarify the accounting treatment of partner contributions, profit distribution, and partner exits in such funds.\",\n          \"To ensure Shariah compliance and enhance transparency in financial reporting.\"\n        ],\n        \"scope\": {\n          \"applicable_transactions_entities\": \"This standard applies to Islamic financial institutions (IFIs) and other entities that utilize diminishing Musharaka (shirkah al-\\u02bfaqd) structures in real estate funds.\",\n          \"exclusions\": \"This standard does not cover Musharaka arrangements outside the context of real estate funds or those that do not involve a diminishing equity structure.\"\n        },\n        \"key_shariah_principles\": [\n          \"Adherence to Shariah principles of fair valuation, particularly in the context of partner contributions and exits.\",\n          \"Profit and loss distribution based on agreed-upon ratios reflecting equity ownership.\",\n          \"Avoidance of Riba (interest) and Gharar (uncertainty) in all transactions and valuations.\",\n          \"Transparency and full disclosure of all relevant information to partners and stakeholders.\"\n        ]\n      }\n    },\n    {\n      \"title\": \"Definitions\",\n      \"content\": {\n        \"definitions\": [\n          {\n            \"term\": \"Diminishing Musharaka\",\n            \"definition\": \"A Shirkah al-\\u02bfAqd (partnership) where one partner gradually transfers their ownership share to the other partner(s) over time.\"\n          },\n          {\n            \"term\": \"Fair Value\",\n            \"definition\": \"The price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date.\"\n          },\n          {\n            \"term\": \"Shirkah al-\\u02bfAqd\",\n            \"definition\": \"A partnership agreement between two or more parties to contribute capital or effort to a business venture, sharing profits and losses as per the agreed ratio.\"\n          },\n          {\n            \"term\": \"Qualified Independent Valuer\",\n            \"definition\": \"A valuer who possesses the necessary qualifications, competence, and independence to perform valuations in accordance with recognized standards.\"\n          }\n        ]\n      }\n    },\n    {\n      \"title\": \"Recognition and Initial Measurement\",\n      \"content\": {\n        \"recognition\": {\n          \"general_criteria\": \"Partner contributions, whether in cash or in-kind, should be recognized in the financial statements when the partner transfers control of the asset or cash to the Musharaka fund.\",\n          \"specific_points\": \"Initial recognition occurs at the time of contribution, with in-kind contributions recognized when legal title or equivalent rights are transferred.\"\n        },\n        \"initial_measurement\": {\n          \"general_principle\": \"Partner contributions shall be initially measured at their fair value at the time of contribution.\",\n          \"specific_guidance\": \"Fair value should be determined based on market prices, appraisals by qualified independent valuers, or other appropriate valuation techniques, and agreed upon by all partners.\"\n        }\n      }\n    },\n    {\n      \"title\": \"Subsequent Measurement & De-recognition\",\n      \"content\": {\n        \"subsequent_measurement\": {\n          \"measurement_basis\": \"Subsequent measurement of the underlying assets contributed to the Musharaka should follow the principles outlined in relevant FAS standards (e.g., FAS XXX, referencing FAS 157 for Fair Value Measurement, if applicable).\",\n          \"changes_in_value\": \"Gains or losses arising from re-measurement of the underlying assets should be recognized in profit or loss unless another FAS requires or permits otherwise.\",\n          \"profit_loss_recognition\": \"Profit and loss distribution should adhere to the agreed-upon profit-sharing ratio, adjusted dynamically as partner equity changes. The diminishing partner's profit share should decrease proportionally with their equity stake reduction.\"\n        },\n        \"de_recognition\": {\n          \"criteria\": \"A partner's ownership stake is de-recognized upon their exit from the Musharaka fund.\",\n          \"accounting\": \"The equity of the exiting partner is reduced, and the equity of the remaining partners or new entrants is increased, proportionate to their respective shares in the Musharaka. Any gain or loss on de-recognition is the difference between the settlement amount paid to the exiting partner and the carrying amount of their equity stake.\"\n        }\n      }\n    },\n    {\n      \"title\": \"Disclosure Requirements\",\n      \"content\": {\n        \"qualitative_disclosures\": [\n          \"Description of the nature of the diminishing Musharaka arrangement, including the profit-sharing ratios and equity ownership structure.\",\n          \"Key accounting policies adopted for measuring partner contributions, profit distribution, and partner exits.\",\n          \"Information about risk management practices related to the underlying real estate assets.\",\n          \"Confirmation that the Musharaka arrangement adheres to Shariah principles, including the avoidance of Riba and Gharar.\"\n        ],\n        \"quantitative_disclosures\": [\n          \"Breakdown of carrying amounts of partner contributions, distinguishing between cash and in-kind contributions.\",\n          \"Reconciliation of movements in partners' equity, showing contributions, withdrawals, and profit/loss allocations.\",\n          \"Income/expense recognized related to the Musharaka arrangement.\",\n          \"Information on the valuation methods used for the underlying real estate assets and the impact on partners' equity.\",\n          \"Details of any partner exits, including the valuation method used, the settlement amount, and the impact on the remaining partners' equity.\"\n        ]\n      }\n    },\n    {\n      \"title\": \"Basis for Conclusions (Summary)\",\n      \"content\": {\n        \"rationale\": \"The updated guidance addresses the gap in FAS 4 regarding the specific application to diminishing Musharaka structures in real estate funds. This includes clarifying the accounting treatment for partner contributions, profit distribution, and partner exits, ensuring consistent application and comparability.\",\n        \"shariah_compliance\": \"The standard ensures alignment with Shariah principles by emphasizing fair valuation, profit-sharing based on equity, and Shariah-compliant settlement procedures, avoiding Riba and Gharar.\",\n        \"addressing_gaps\": \"This standard specifically addresses the user's context by providing concrete guidance on the accounting for partner contributions and exits in real estate funds utilizing diminishing Musharaka, enhancing the applicability of FAS 4 in these scenarios.\"\n      }\n    }\n  ]\n}",
+  "change_summary": "Here's a summary of the changes to FAS 4 regarding its application to diminishing Musharaka in real estate funds:\n\nWe've added specific guidance to FAS 4 to clarify how it applies to real estate funds using diminishing Musharaka (shirkah al-ʿaqd) structures. This update addresses your concerns about partner contributions and exits.\n\nHere's what's new:\n\n*   **Partner Contributions:** Clearer rules on how to value and record contributions (cash or assets) made by partners at the start.\n*   **Profit & Loss Distribution:** Updated guidelines on how to distribute profits and losses as partners' ownership changes over time. The diminishing partner's share of profit shall reduce proportionately with their diminishing equity stake\n*   **Partner Exits:** Specific instructions on valuing a departing partner's stake and settling their accounts in a Shariah-compliant way.\n*   **Ownership Transfer:** Guidance on how to account for the transfer of ownership units when a partner leaves, including disclosures in the financial statements.\n\nWhy these changes?\n\nThe original FAS 4 lacked detailed guidance for these specific situations in diminishing Musharaka real estate funds. These updates bring FAS 4 in line with Shariah principles (fair valuation, equitable profit-sharing) and enhance transparency for Islamic Financial Institutions. We've referenced AAOIFI standards (SS 12) and relevant Fatwas, as well as other FAS standards (FAS XXX, FAS XX, FAS YY - specific numbers to be added based on applicability) to provide a comprehensive framework.",
+  "reasoning_trace": {
+    "uiria": {
+      "context": "Application of diminishing Musharaka in real estate funds raises questions regarding partner contributions and exits under shirkah al-ʿaqd structures, particularly concerning FAS 4's applicability.",
+      "identified_FAS": "FAS 4",
+      "extracted_entities": [
+        "diminishing Musharaka",
+        "shirkah al-ʿaqd",
+        "real estate funds",
+        "partner contributions",
+        "partner exits"
+      ],
+      "user_intent": "clarification"
+    },
+    "fcia": {
+      "identified_gaps": [
+        {
+          "clause": "FAS 4 - General Principles and Definitions",
+          "issue": "Lack of specific guidance on the application of FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd).",
+          "justification": "The current FAS 4 provides general principles for Musharaka. However, the specific complexities of applying these principles to real estate funds with diminishing Musharaka features are not explicitly addressed. This includes accounting for partner contributions at different stages, valuation of assets, and profit/loss distribution during the equity reduction phase. The user's context highlights uncertainty regarding the appropriateness of FAS 4 in such scenarios."
+        },
+        {
+          "clause": "FAS 4 - Measurement and Disclosure",
+          "issue": "Insufficient guidance on handling partner exits and the transfer of ownership in diminishing Musharaka structures within real estate funds.",
+          "justification": "The FAS lacks detailed guidance on accounting for the transfer of ownership units as partners exit the Musharaka. The accounting treatment for the reduction in equity stake, the valuation of the departing partner's share, and the corresponding impact on the remaining partners' equity are not clearly defined. This is crucial for the user's scenario as it directly impacts the financial reporting and transparency of the real estate fund."
+        }
+      ],
+      "affected_clauses": [
+        "FAS 4 - General Principles and Definitions",
+        "FAS 4 - Measurement and Disclosure"
+      ],
+      "user_context": "The user is inquiring about the applicability of FAS 4 to real estate funds that use diminishing Musharaka (shirkah al-ʿaqd), specifically regarding partner contributions and exits.",
+      "FAS_reference": "FAS 4"
+    },
+    "spia": {
+      "shariah_solution": "To provide specific guidance on the application of FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), and to address the handling of partner exits and ownership transfer, the following updated clauses are proposed. These clauses incorporate the principles of diminishing Musharaka as outlined in AAOIFI standards and relevant Shariah rulings related to partnership equity adjustments.",
+      "updated_shariah_clauses": [
+        {
+          "clause_id": "FAS4.DM1",
+          "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be recorded at their fair market value at the time of contribution, as agreed upon by all partners and validated by a qualified independent valuer. This valuation should adhere to prevailing Shariah guidelines on Gharar (uncertainty) and Riba (interest).",
+          "reference": "AAOIFI SS 12, Para 3/12"
+        },
+        {
+          "clause_id": "FAS4.DM2",
+          "text": "Profit and loss distribution in a diminishing Musharaka real estate fund shall be based on the agreed-upon profit-sharing ratio, which may change as the equity of each partner is adjusted throughout the Musharaka period. The diminishing partner's share of profit shall reduce proportionately with their diminishing equity stake, and such changes must be clearly documented and communicated to all partners. The distribution mechanism should be free from any element of Riba.",
+          "reference": "AAOIFI SS 12, Para 4/12"
+        },
+        {
+          "clause_id": "FAS4.OE1",
+          "text": "Upon a partner's exit from the diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair market value of the underlying assets at the time of exit, as determined by a qualified independent valuer acceptable to all partners. This valuation should take into account any accrued profits or losses. The settlement to the exiting partner must be conducted in a Shariah-compliant manner, avoiding any elements of interest or undue advantage.",
+          "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+        },
+        {
+          "clause_id": "FAS4.OE2",
+          "text": "The transfer of ownership units resulting from a partner's exit shall be accounted for by reducing the equity of the exiting partner and increasing the equity of the remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund shall disclose the details of the partner's exit, including the valuation method used, the settlement amount, and the impact on the remaining partners' equity.",
+          "reference": "AAOIFI SS 12, Para 6/12"
+        }
+      ],
+      "references": [
+        "AAOIFI SS 12",
+        "Fatwa on Equity Valuation in Islamic Partnerships"
+      ]
+    },
+    "arda": {
+      "updated_accounting_clauses": [
+        {
+          "clause_id": "FAS4.DM.ACC1",
+          "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be initially measured at fair value, determined at the time of contribution. This fair value must be agreed upon by all partners and validated by a qualified independent valuer to mitigate Gharar (uncertainty) and Riba (interest). Subsequent measurement should follow the principles outlined in FAS XXX (reference a relevant FAS on asset measurement, e.g., FAS 157 for Fair Value Measurement, if applicable).",
+          "reference": "AAOIFI SS 12, Para 3/12; FAS XXX"
+        },
+        {
+          "clause_id": "FAS4.DM.ACC2",
+          "text": "Profit and loss distribution for diminishing Musharaka real estate funds shall adhere to the agreed-upon profit-sharing ratio, which may dynamically adjust as partner equity changes throughout the Musharaka period. The diminishing partner's profit share should decrease proportionally with their equity stake reduction. These adjustments must be clearly documented and disclosed to all partners. The distribution mechanism should be free from any element of Riba. The accounting should reflect the substance of the changing ownership structure, in line with FAS XX (reference relevant FAS on revenue recognition or profit allocation).",
+          "reference": "AAOIFI SS 12, Para 4/12; FAS XX"
+        },
+        {
+          "clause_id": "FAS4.OE.ACC1",
+          "text": "Upon a partner's exit from a diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair value of the underlying assets at the exit date, determined by a qualified independent valuer acceptable to all partners. This valuation must consider accrued profits and losses up to the exit date. The settlement to the exiting partner must be Shariah-compliant, avoiding interest or undue advantage.",
+          "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+        },
+        {
+          "clause_id": "FAS4.OE.ACC2",
+          "text": "The transfer of ownership units resulting from a partner's exit requires accounting for the reduction of the exiting partner's equity and a corresponding increase in the equity of remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund's financial statements shall transparently disclose details of the partner's exit, encompassing the valuation method, settlement amount, and the resulting impact on the remaining partners' equity. These changes should be consistently applied and follow the principles of equity accounting outlined in FAS YY (reference FAS dealing with equity accounting).",
+          "reference": "AAOIFI SS 12, Para 6/12; FAS YY"
+        }
+      ],
+      "rationale": "These updated clauses are necessary to provide specific accounting guidance for diminishing Musharaka structures in real estate funds, addressing the gap in FAS 4. They align with Shariah principles by emphasizing fair valuation, profit-sharing based on equity, and Shariah-compliant settlement procedures. They ensure transparency and consistency in financial reporting for IFIs, aligning with both FAS and AAOIFI standards. The clauses on partner contributions, profit distribution, and ownership transfer provide concrete guidance for practical application.",
+      "references": [
+        "FAS 4",
+        "AAOIFI SS 12",
+        "Fatwa on Equity Valuation in Islamic Partnerships",
+        "FAS XXX",
+        "FAS XX",
+        "FAS YY"
+      ]
+    },
+    "stsa": {
+      "all_updated_sections": {
+        "Shariah Section": {
+          "shariah_solution": "To provide specific guidance on the application of FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), and to address the handling of partner exits and ownership transfer, the following updated clauses are proposed. These clauses incorporate the principles of diminishing Musharaka as outlined in AAOIFI standards and relevant Shariah rulings related to partnership equity adjustments.",
+          "updated_shariah_clauses": [
+            {
+              "clause_id": "FAS4.DM1",
+              "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be recorded at their fair market value at the time of contribution, as agreed upon by all partners and validated by a qualified independent valuer. This valuation should adhere to prevailing Shariah guidelines on Gharar (uncertainty) and Riba (interest).",
+              "reference": "AAOIFI SS 12, Para 3/12"
+            },
+            {
+              "clause_id": "FAS4.DM2",
+              "text": "Profit and loss distribution in a diminishing Musharaka real estate fund shall be based on the agreed-upon profit-sharing ratio, which may change as the equity of each partner is adjusted throughout the Musharaka period. The diminishing partner's share of profit shall reduce proportionately with their diminishing equity stake, and such changes must be clearly documented and communicated to all partners. The distribution mechanism should be free from any element of Riba.",
+              "reference": "AAOIFI SS 12, Para 4/12"
+            },
+            {
+              "clause_id": "FAS4.OE1",
+              "text": "Upon a partner's exit from the diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair market value of the underlying assets at the time of exit, as determined by a qualified independent valuer acceptable to all partners. This valuation should take into account any accrued profits or losses. The settlement to the exiting partner must be conducted in a Shariah-compliant manner, avoiding any elements of interest or undue advantage.",
+              "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+            },
+            {
+              "clause_id": "FAS4.OE2",
+              "text": "The transfer of ownership units resulting from a partner's exit shall be accounted for by reducing the equity of the exiting partner and increasing the equity of the remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund shall disclose the details of the partner's exit, including the valuation method used, the settlement amount, and the impact on the remaining partners' equity.",
+              "reference": "AAOIFI SS 12, Para 6/12"
+            }
+          ],
+          "references": [
+            "AAOIFI SS 12",
+            "Fatwa on Equity Valuation in Islamic Partnerships"
+          ]
+        },
+        "Accounting Section": {
+          "updated_accounting_clauses": [
+            {
+              "clause_id": "FAS4.DM.ACC1",
+              "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be initially measured at fair value, determined at the time of contribution. This fair value must be agreed upon by all partners and validated by a qualified independent valuer to mitigate Gharar (uncertainty) and Riba (interest). Subsequent measurement should follow the principles outlined in FAS XXX (reference a relevant FAS on asset measurement, e.g., FAS 157 for Fair Value Measurement, if applicable).",
+              "reference": "AAOIFI SS 12, Para 3/12; FAS XXX"
+            },
+            {
+              "clause_id": "FAS4.DM.ACC2",
+              "text": "Profit and loss distribution for diminishing Musharaka real estate funds shall adhere to the agreed-upon profit-sharing ratio, which may dynamically adjust as partner equity changes throughout the Musharaka period. The diminishing partner's profit share should decrease proportionally with their equity stake reduction. These adjustments must be clearly documented and disclosed to all partners. The distribution mechanism should be free from any element of Riba. The accounting should reflect the substance of the changing ownership structure, in line with FAS XX (reference relevant FAS on revenue recognition or profit allocation).",
+              "reference": "AAOIFI SS 12, Para 4/12; FAS XX"
+            },
+            {
+              "clause_id": "FAS4.OE.ACC1",
+              "text": "Upon a partner's exit from a diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair value of the underlying assets at the exit date, determined by a qualified independent valuer acceptable to all partners. This valuation must consider accrued profits and losses up to the exit date. The settlement to the exiting partner must be Shariah-compliant, avoiding interest or undue advantage.",
+              "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+            },
+            {
+              "clause_id": "FAS4.OE.ACC2",
+              "text": "The transfer of ownership units resulting from a partner's exit requires accounting for the reduction of the exiting partner's equity and a corresponding increase in the equity of remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund's financial statements shall transparently disclose details of the partner's exit, encompassing the valuation method, settlement amount, and the resulting impact on the remaining partners' equity. These changes should be consistently applied and follow the principles of equity accounting outlined in FAS YY (reference FAS dealing with equity accounting).",
+              "reference": "AAOIFI SS 12, Para 6/12; FAS YY"
+            }
+          ],
+          "rationale": "These updated clauses are necessary to provide specific accounting guidance for diminishing Musharaka structures in real estate funds, addressing the gap in FAS 4. They align with Shariah principles by emphasizing fair valuation, profit-sharing based on equity, and Shariah-compliant settlement procedures. They ensure transparency and consistency in financial reporting for IFIs, aligning with both FAS and AAOIFI standards. The clauses on partner contributions, profit distribution, and ownership transfer provide concrete guidance for practical application.",
+          "references": [
+            "FAS 4",
+            "AAOIFI SS 12",
+            "Fatwa on Equity Valuation in Islamic Partnerships",
+            "FAS XXX",
+            "FAS XX",
+            "FAS YY"
+          ]
+        }
+      },
+      "original_sections": {
+        "FAS 4 - General Principles and Definitions": "Original FAS 4 text (not provided in the user context).",
+        "FAS 4 - Measurement and Disclosure": "Original FAS 4 text (not provided in the user context)."
+      },
+      "change_log": [
+        "Added specific guidance on applying FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd).",
+        "Provided updated clauses addressing partner contributions in diminishing Musharaka real estate funds.",
+        "Provided updated clauses addressing profit and loss distribution in diminishing Musharaka real estate funds.",
+        "Provided updated clauses addressing partner exits in diminishing Musharaka real estate funds.",
+        "Provided updated clauses addressing the transfer of ownership units in diminishing Musharaka real estate funds.",
+        "Ensured alignment with Shariah principles regarding fair valuation, profit-sharing, and Shariah-compliant settlement procedures.",
+        "Enhanced transparency and consistency in financial reporting for IFIs.",
+        "Referenced relevant AAOIFI standards (SS 12) and Fatwas.",
+        "Referenced relevant FAS standards (FAS XXX, FAS XX, FAS YY - to be determined based on applicability)."
+      ],
+      "references": [
+        "FAS 4",
+        "AAOIFI SS 12",
+        "Fatwa on Equity Valuation in Islamic Partnerships",
+        "FAS XXX",
+        "FAS XX",
+        "FAS YY"
+      ]
+    },
+    "fas_diff": {
+      "changes": [
+        {
+          "old_text": "No changes detected",
+          "new_text": "No changes detected",
+          "justification": "The system did not detect any changes between versions",
+          "section_id": "N/A",
+          "change_type": "none"
+        }
+      ],
+      "key_changes_summary": "No key changes detected",
+      "change_statistics": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 0
+      }
+    }
+  },
+  "old_outputs": {
+    "updated_fas_document": {
+      "Shariah Section": {
+        "shariah_solution": "To provide specific guidance on the application of FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), and to address the handling of partner exits and ownership transfer, the following updated clauses are proposed. These clauses incorporate the principles of diminishing Musharaka as outlined in AAOIFI standards and relevant Shariah rulings related to partnership equity adjustments.",
+        "updated_shariah_clauses": [
+          {
+            "clause_id": "FAS4.DM1",
+            "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be recorded at their fair market value at the time of contribution, as agreed upon by all partners and validated by a qualified independent valuer. This valuation should adhere to prevailing Shariah guidelines on Gharar (uncertainty) and Riba (interest).",
+            "reference": "AAOIFI SS 12, Para 3/12"
+          },
+          {
+            "clause_id": "FAS4.DM2",
+            "text": "Profit and loss distribution in a diminishing Musharaka real estate fund shall be based on the agreed-upon profit-sharing ratio, which may change as the equity of each partner is adjusted throughout the Musharaka period. The diminishing partner's share of profit shall reduce proportionately with their diminishing equity stake, and such changes must be clearly documented and communicated to all partners. The distribution mechanism should be free from any element of Riba.",
+            "reference": "AAOIFI SS 12, Para 4/12"
+          },
+          {
+            "clause_id": "FAS4.OE1",
+            "text": "Upon a partner's exit from the diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair market value of the underlying assets at the time of exit, as determined by a qualified independent valuer acceptable to all partners. This valuation should take into account any accrued profits or losses. The settlement to the exiting partner must be conducted in a Shariah-compliant manner, avoiding any elements of interest or undue advantage.",
+            "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+          },
+          {
+            "clause_id": "FAS4.OE2",
+            "text": "The transfer of ownership units resulting from a partner's exit shall be accounted for by reducing the equity of the exiting partner and increasing the equity of the remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund shall disclose the details of the partner's exit, including the valuation method used, the settlement amount, and the impact on the remaining partners' equity.",
+            "reference": "AAOIFI SS 12, Para 6/12"
+          }
+        ],
+        "references": [
+          "AAOIFI SS 12",
+          "Fatwa on Equity Valuation in Islamic Partnerships"
+        ]
+      },
+      "Accounting Section": {
+        "updated_accounting_clauses": [
+          {
+            "clause_id": "FAS4.DM.ACC1",
+            "text": "In the context of real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd), partner contributions, whether in cash or in-kind (e.g., land, property rights), shall be initially measured at fair value, determined at the time of contribution. This fair value must be agreed upon by all partners and validated by a qualified independent valuer to mitigate Gharar (uncertainty) and Riba (interest). Subsequent measurement should follow the principles outlined in FAS XXX (reference a relevant FAS on asset measurement, e.g., FAS 157 for Fair Value Measurement, if applicable).",
+            "reference": "AAOIFI SS 12, Para 3/12; FAS XXX"
+          },
+          {
+            "clause_id": "FAS4.DM.ACC2",
+            "text": "Profit and loss distribution for diminishing Musharaka real estate funds shall adhere to the agreed-upon profit-sharing ratio, which may dynamically adjust as partner equity changes throughout the Musharaka period. The diminishing partner's profit share should decrease proportionally with their equity stake reduction. These adjustments must be clearly documented and disclosed to all partners. The distribution mechanism should be free from any element of Riba. The accounting should reflect the substance of the changing ownership structure, in line with FAS XX (reference relevant FAS on revenue recognition or profit allocation).",
+            "reference": "AAOIFI SS 12, Para 4/12; FAS XX"
+          },
+          {
+            "clause_id": "FAS4.OE.ACC1",
+            "text": "Upon a partner's exit from a diminishing Musharaka real estate fund, the valuation of their ownership stake shall be determined based on the prevailing fair value of the underlying assets at the exit date, determined by a qualified independent valuer acceptable to all partners. This valuation must consider accrued profits and losses up to the exit date. The settlement to the exiting partner must be Shariah-compliant, avoiding interest or undue advantage.",
+            "reference": "AAOIFI SS 12, Para 5/12, Fatwa on Equity Valuation in Islamic Partnerships"
+          },
+          {
+            "clause_id": "FAS4.OE.ACC2",
+            "text": "The transfer of ownership units resulting from a partner's exit requires accounting for the reduction of the exiting partner's equity and a corresponding increase in the equity of remaining partners or new entrants, proportionate to their respective shares in the Musharaka. The fund's financial statements shall transparently disclose details of the partner's exit, encompassing the valuation method, settlement amount, and the resulting impact on the remaining partners' equity. These changes should be consistently applied and follow the principles of equity accounting outlined in FAS YY (reference FAS dealing with equity accounting).",
+            "reference": "AAOIFI SS 12, Para 6/12; FAS YY"
+          }
+        ],
+        "rationale": "These updated clauses are necessary to provide specific accounting guidance for diminishing Musharaka structures in real estate funds, addressing the gap in FAS 4. They align with Shariah principles by emphasizing fair valuation, profit-sharing based on equity, and Shariah-compliant settlement procedures. They ensure transparency and consistency in financial reporting for IFIs, aligning with both FAS and AAOIFI standards. The clauses on partner contributions, profit distribution, and ownership transfer provide concrete guidance for practical application.",
+        "references": [
+          "FAS 4",
+          "AAOIFI SS 12",
+          "Fatwa on Equity Valuation in Islamic Partnerships",
+          "FAS XXX",
+          "FAS XX",
+          "FAS YY"
+        ]
+      }
+    },
+    "change_log": [
+      "Added specific guidance on applying FAS 4 to real estate funds utilizing diminishing Musharaka (shirkah al-ʿaqd).",
+      "Provided updated clauses addressing partner contributions in diminishing Musharaka real estate funds.",
+      "Provided updated clauses addressing profit and loss distribution in diminishing Musharaka real estate funds.",
+      "Provided updated clauses addressing partner exits in diminishing Musharaka real estate funds.",
+      "Provided updated clauses addressing the transfer of ownership units in diminishing Musharaka real estate funds.",
+      "Ensured alignment with Shariah principles regarding fair valuation, profit-sharing, and Shariah-compliant settlement procedures.",
+      "Enhanced transparency and consistency in financial reporting for IFIs.",
+      "Referenced relevant AAOIFI standards (SS 12) and Fatwas.",
+      "Referenced relevant FAS standards (FAS XXX, FAS XX, FAS YY - to be determined based on applicability)."
+    ],
+    "references": [
+      "FAS 4",
+      "AAOIFI SS 12",
+      "Fatwa on Equity Valuation in Islamic Partnerships",
+      "FAS XXX",
+      "FAS XX",
+      "FAS YY"
+    ],
+    "detailed_changes": [
+      

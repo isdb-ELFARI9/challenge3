@@ -1,0 +1,508 @@
+{
+  "document": "\n## Key Changes from Previous FAS Version\n\n\n\n{\n  \"pages\": [\n    {\n      \"title\": \"Title & Effective Date\",\n      \"content\": {\n        \"standard_number\": \"FAS 4 (Revised)\",\n        \"title\": \"Accounting for Musharaka Contracts: Application to Shirkah al-\\u02bfAqd in Real Estate Funds\",\n        \"example_title\": \"Accounting for Innovative Digital Assets\",\n        \"effective_date\": \"01 January 2025 (Gregorian) / 20 Jumada II 1446 (Hijri)\",\n        \"issued_by\": \"AI-Driven Standard Enhancement System (Conceptual)\"\n      }\n    },\n    {\n      \"title\": \"Objective, Scope & Key Principles\",\n      \"content\": {\n        \"objective\": [\n          \"To provide specific guidance on the accounting treatment of Shirkah al-\\u02bfAqd structures, particularly those utilized in real estate funds, addressing partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms.\",\n          \"Clarifies the application of FAS 4 to Shirkah al-\\u02bfAqd and ensures consistent accounting practices.\"\n        ],\n        \"scope\": {\n          \"applicable_transactions_entities\": \"This standard applies to all forms of Musharaka contracts, including Shirkah al-\\u02bfAqd structures, particularly those utilized in real estate funds. It governs the accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits.\",\n          \"exclusions\": \"This standard does not cover Musharaka contracts that do not conform to Shariah principles or that are used for purposes other than real estate investment funds without specific modifications.\"\n        },\n        \"key_shariah_principles\": [\n          \"Principle of Universal Applicability of Shariah to Financial Transactions\",\n          \"Principles of Diminishing Musharaka and Fair Valuation\",\n          \"Principles of Contractual Rights and Obligations\",\n          \"Principles of Transparency and Disclosure\"\n        ]\n      }\n    },\n    {\n      \"title\": \"Definitions\",\n      \"content\": {\n        \"definitions\": [\n          {\n            \"term\": \"Musharaka\",\n            \"definition\": \"A partnership arrangement where two or more parties contribute capital to a joint venture, sharing profits and losses in an agreed ratio.\"\n          },\n          {\n            \"term\": \"Shirkah al-\\u02bfAqd\",\n            \"definition\": \"A contractual partnership where two or more parties agree to contribute assets or expertise to a joint venture for the purpose of generating profit.\"\n          },\n          {\n            \"term\": \"Diminishing Musharaka\",\n            \"definition\": \"A form of Musharaka where one partner gradually reduces their equity share, while the other partner increases their share, through periodic purchases.\"\n          },\n          {\n            \"term\": \"Fair Valuation\",\n            \"definition\": \"A determination of the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date.\"\n          }\n        ]\n      }\n    },\n    {\n      \"title\": \"Recognition and Initial Measurement\",\n      \"content\": {\n        \"recognition\": {\n          \"general_criteria\": \"A Musharaka or Shirkah al-\\u02bfAqd should be recognized when the agreement is legally binding, and each partner has contributed their agreed-upon share of capital or assets.\",\n          \"specific_points\": \"Partner contributions are recognized as equity at the fair value of the assets contributed. In the case of Diminishing Musharaka, the initial equity shares are determined based on the initial agreement.\"\n        },\n        \"initial_measurement\": {\n          \"general_principle\": \"Partner contributions are initially measured at fair value at the time of contribution.\",\n          \"specific_guidance\": \"Non-cash contributions are measured at their fair market value. If fair value cannot be reliably determined, the carrying amount may be used, subject to Shariah Supervisory Board approval. For Shirkah al-\\u02bfAqd structures, the initial measurement should also consider any upfront fees or costs associated with the formation of the partnership.\"\n        }\n      }\n    },\n    {\n      \"title\": \"Subsequent Measurement & De-recognition\",\n      \"content\": {\n        \"subsequent_measurement\": {\n          \"measurement_basis\": \"The underlying assets of the Musharaka or Shirkah al-\\u02bfAqd should be measured according to applicable accounting standards (e.g., IFRS, AAOIFI standards). Equity adjustments in Diminishing Musharaka are measured based on the agreed-upon purchase price at each equity transfer.\",\n          \"changes_in_value\": \"Changes in the fair value of underlying assets are recognized in profit or loss, unless specific accounting standards require otherwise (e.g., revaluation model for real estate). Profit or loss from equity transfers in Diminishing Musharaka is recognized in the period it occurs.\",\n          \"profit_loss_recognition\": \"Profits and losses are allocated to partners based on the agreed profit-sharing ratio before any equity adjustments in the case of diminishing Musharaka. The distribution should comply with Shariah principles and the partnership agreement.\"\n        },\n        \"de_recognition\": {\n          \"criteria\": \"A partner's equity is derecognized upon their exit from the Shirkah al-\\u02bfAqd, through buy-out, sale to a third party, or liquidation of the fund.\",\n          \"accounting\": \"Any gain or loss arising on de-recognition (i.e., upon partner exit) is recognized in profit or loss. The remaining partners' equity is adjusted accordingly to reflect the transfer of equity or the distribution of assets upon liquidation.\"\n        }\n      }\n    },\n    {\n      \"title\": \"Disclosure Requirements\",\n      \"content\": {\n        \"qualitative_disclosures\": [\n          \"Description of the nature of the Shirkah al-\\u02bfAqd activities and underlying assets.\",\n          \"Key accounting policies adopted for measuring assets, recognizing profit/loss, and accounting for partner exits.\",\n          \"Information about risk management practices, including Shariah compliance risks.\",\n          \"Confirmation of Shari'ah compliance, approved by the Shariah Supervisory Board.\"\n        ],\n        \"quantitative_disclosures\": [\n          \"Breakdown of carrying amounts of assets held within the Shirkah al-\\u02bfAqd.\",\n          \"Reconciliation of movements in partners' equity, including contributions, profit/loss allocations, and equity transfers.\",\n          \"Income and expenses recognized by the Shirkah al-\\u02bfAqd.\",\n          \"Maturity analysis of assets and liabilities.\",\n          \"Information on any impaired assets and related provisions.\",\n          \"The specific mechanisms for partner exits and the accounting policies applied to these exits.\",\n          \"The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs.\",\n          \"The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure.\"\n        ]\n      }\n    },\n    {\n      \"title\": \"Basis for Conclusions (Summary)\",\n      \"content\": {\n        \"rationale\": \"These updates to FAS 4 clarify its application to Shirkah al-\\u02bfAqd structures, particularly in real estate funds. They provide specific guidance on partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, promoting consistent accounting practices and transparent financial reporting.\",\n        \"shariah_compliance\": \"The standard ensures alignment with Shari'ah principles by requiring adherence to AAOIFI standards, Shariah Supervisory Board approval, and specific Shariah-compliant methods for valuation and profit distribution.\",\n        \"addressing_gaps\": \"This standard addresses the user's concern regarding the lack of specific guidance on accounting for Shirkah al-\\u02bfAqd, diminishing Musharaka, and partner exits in the context of real estate funds. It aims to reduce ambiguity and enhance the reliability of financial information for these structures.\"\n      }\n    }\n  ]\n}",
+  "change_summary": "We've updated FAS 4 to provide clearer guidance on how it applies to *Shirkah al-ʿAqd* structures, especially in real estate funds. The main changes address your questions about *diminishing Musharaka*, *partner contributions*, and *partner exits*.\n\nHere's what's new:\n\n*   **General Applicability (FAS4.GA1):** We've made it clear that FAS 4 *does* apply to Shirkah al-ʿAqd, specifically in real estate funds, covering partner contributions, profit/loss, equity changes, and exits.\n*   **Diminishing Musharaka (FAS4.DM1):** Now there's specific guidance on how to account for equity reductions in diminishing Musharaka within Shirkah al-ʿAqd real estate funds. This includes using fair valuation methods for equity transfers and distributing profits/losses accordingly.\n*   **Partner Exits (FAS4.PE1 & FAS4.PE2):** We've detailed the accounting for different exit scenarios like buy-outs, sales to third parties, and fund liquidation. It also emphasizes the need for Shariah-compliant settlements of rights and obligations upon exit, requiring approval from the Shariah Supervisory Board.\n*   **Disclosures (FAS4.DR1):** Shirkah al-ʿAqd real estate funds now have specific disclosure requirements, including details on partner exit mechanisms, valuation methods, profit-sharing, and Shariah compliance.\n\nThese updates clarify how to apply FAS 4 to Shirkah al-ʿAqd structures in real estate funds, ensuring Shariah compliance and providing more transparent accounting. We have updated the Shariah solutions and accounting rationale in line with these changes.",
+  "reasoning_trace": {
+    "uiria": {
+      "context": "Application of diminishing Musharaka in real estate funds and a query regarding the applicability of FAS 4 to shirkah al-ʿaqd structures, specifically concerning partner contributions and exits.",
+      "identified_FAS": "FAS 4",
+      "extracted_entities": [
+        "diminishing Musharaka",
+        "shirkah al-ʿaqd",
+        "real estate funds",
+        "partner contributions",
+        "partner exits"
+      ],
+      "user_intent": "clarification"
+    },
+    "fcia": {
+      "identified_gaps": [
+        {
+          "clause": "General Applicability to Shirkah al-ʿAqd",
+          "issue": "The standard does not explicitly state its applicability to Shirkah al-ʿAqd, especially regarding partner contributions and exits in real estate funds.",
+          "justification": "The user specifically asks about Shirkah al-ʿAqd, and the standard's broad definition of Musharaka may not fully cover the specific nuances of partner contributions, profit/loss distribution, and exit mechanisms prevalent in Shirkah al-ʿAqd based real estate funds. Without explicit guidance, ambiguity arises in applying FAS 4 principles to this specific structure."
+        },
+        {
+          "clause": "Equity Reduction Mechanism (Diminishing Musharaka)",
+          "issue": "The standard lacks detailed guidance on how equity reduction should be handled in the context of a real estate fund utilizing diminishing Musharaka.",
+          "justification": "The user scenario involves diminishing Musharaka, where one partner's equity gradually reduces as the other partner's equity increases. The standard should provide specific rules on how to account for these equity transfers, profit sharing adjustments, and valuation considerations within a real estate fund context. The lack of clarity makes it difficult to ensure consistent and accurate application in real estate funds."
+        },
+        {
+          "clause": "Partner Exit Mechanisms",
+          "issue": "The standard does not adequately address the accounting treatment of different partner exit mechanisms in Shirkah al-ʿAqd real estate funds.",
+          "justification": "The user is concerned about partner exits. The standard should elaborate on how to account for different exit scenarios, such as buy-outs, sales to third parties, or liquidation of the fund. The standard needs to specify accounting treatments for capital gains/losses realized upon exit, the impact on remaining partners' equity, and any specific disclosure requirements."
+        }
+      ],
+      "affected_clauses": [
+        "General Applicability",
+        "Equity Accounting",
+        "Profit and Loss Distribution",
+        "Disclosure Requirements"
+      ],
+      "user_context": "The user is inquiring about the applicability of FAS 4 to Shirkah al-ʿAqd structures in real estate funds, specifically focusing on partner contributions, equity reduction through diminishing Musharaka, and partner exit scenarios.",
+      "FAS_reference": "FAS 4"
+    },
+    "spia": {
+      "shariah_solution": "To address the gaps in the application of FAS 4 to Shirkah al-ʿAqd real estate funds, especially concerning partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, the following clauses are added/modified to provide clarity and Shariah compliance.",
+      "updated_shariah_clauses": [
+        {
+          "clause_id": "FAS4.GA1",
+          "text": "This standard applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The principles outlined herein govern the accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+          "reference": "AAOIFI SS 12, Principle of Universal Applicability of Shariah to Financial Transactions"
+        },
+        {
+          "clause_id": "FAS4.DM1",
+          "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be treated as a purchase of the diminishing partner's share by the increasing partner. The purchase price should be based on a fair valuation of the underlying asset at the time of each equity transfer, conducted in accordance with Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment.",
+          "reference": "AAOIFI SS 12, Principles of Diminishing Musharaka and Fair Valuation"
+        },
+        {
+          "clause_id": "FAS4.PE1",
+          "text": "Partner exits from a Shirkah al-ʿAqd real estate fund can occur through various mechanisms, including: a) Buy-out by remaining partners: The exiting partner's share is purchased by the remaining partners at a mutually agreed price or a fair market valuation determined by an independent valuer. b) Sale to a third party: The exiting partner sells their share to an external investor, subject to the approval of the remaining partners and in accordance with the fund's governing documents. c) Liquidation of the fund: The fund is liquidated, and the proceeds are distributed to the partners according to their respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+          "reference": "AAOIFI SS 12, Principles of Contractual Rights and Obligations"
+        },
+        {
+          "clause_id": "FAS4.PE2",
+          "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement should be documented in writing and approved by the Shariah Supervisory Board.",
+          "reference": "AAOIFI Governance Standard for Investment Funds"
+        },
+        {
+          "clause_id": "FAS4.DR1",
+          "text": "In addition to the general disclosure requirements outlined in this standard, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+          "reference": "AAOIFI SS 12, Principles of Transparency and Disclosure"
+        }
+      ],
+      "references": [
+        "AAOIFI SS 12",
+        "AAOIFI Governance Standard for Investment Funds",
+        "Shariah resolutions on Shirkah al-ʿAqd structures"
+      ]
+    },
+    "arda": {
+      "updated_accounting_clauses": [
+        {
+          "clause_id": "FAS4.GA1.ACC",
+          "text": "FAS 4 applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits are governed by the principles outlined herein, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+          "reference": "FAS 4, AAOIFI SS 12"
+        },
+        {
+          "clause_id": "FAS4.DM1.ACC",
+          "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be accounted for as a purchase of the diminishing partner's share by the increasing partner. The purchase price shall be based on a fair valuation of the underlying asset at the time of each equity transfer, determined using Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment, in accordance with the initial Musharaka agreement.",
+          "reference": "FAS 4, AAOIFI SS 12, IFRS 13"
+        },
+        {
+          "clause_id": "FAS4.PE1.ACC",
+          "text": "Partner exits from a Shirkah al-ʿAqd real estate fund shall be accounted for based on the specific exit mechanism employed, including: a) Buy-out by remaining partners: Recognize the transaction as an equity transfer at a mutually agreed price or fair market valuation. b) Sale to a third party: Account for the transaction as a sale of equity, recognizing any capital gains or losses. c) Liquidation of the fund: Recognize the distribution of proceeds according to the partners' respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+          "reference": "FAS 4, AAOIFI SS 12"
+        },
+        {
+          "clause_id": "FAS4.PE2.ACC",
+          "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement shall be documented in writing and approved by the Shariah Supervisory Board and disclosed in the financial statements.",
+          "reference": "FAS 4, AAOIFI Governance Standard for Investment Funds"
+        },
+        {
+          "clause_id": "FAS4.DR1.ACC",
+          "text": "In addition to the general disclosure requirements outlined in FAS 4, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+          "reference": "FAS 4, AAOIFI SS 12"
+        }
+      ],
+      "rationale": "The new and updated clauses address the gaps in FAS 4's application to Shirkah al-ʿAqd structures, particularly in real estate funds. They provide specific guidance on partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, ensuring alignment with Shariah principles and best practices. The additions clarify the accounting treatment for these transactions, promoting consistency and transparency. The inclusion of disclosure requirements enhances the understandability of Shirkah al-ʿAqd financial statements.",
+      "references": [
+        "FAS 4",
+        "AAOIFI SS 12",
+        "AAOIFI Governance Standard for Investment Funds",
+        "IFRS 13"
+      ]
+    },
+    "stsa": {
+      "all_updated_sections": {
+        "Shariah Section": {
+          "shariah_solution": "To address the gaps in the application of FAS 4 to Shirkah al-ʿAqd real estate funds, especially concerning partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, the following clauses are added/modified to provide clarity and Shariah compliance.",
+          "updated_shariah_clauses": [
+            {
+              "clause_id": "FAS4.GA1",
+              "text": "This standard applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The principles outlined herein govern the accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+              "reference": "AAOIFI SS 12, Principle of Universal Applicability of Shariah to Financial Transactions"
+            },
+            {
+              "clause_id": "FAS4.DM1",
+              "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be treated as a purchase of the diminishing partner's share by the increasing partner. The purchase price should be based on a fair valuation of the underlying asset at the time of each equity transfer, conducted in accordance with Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment.",
+              "reference": "AAOIFI SS 12, Principles of Diminishing Musharaka and Fair Valuation"
+            },
+            {
+              "clause_id": "FAS4.PE1",
+              "text": "Partner exits from a Shirkah al-ʿAqd real estate fund can occur through various mechanisms, including: a) Buy-out by remaining partners: The exiting partner's share is purchased by the remaining partners at a mutually agreed price or a fair market valuation determined by an independent valuer. b) Sale to a third party: The exiting partner sells their share to an external investor, subject to the approval of the remaining partners and in accordance with the fund's governing documents. c) Liquidation of the fund: The fund is liquidated, and the proceeds are distributed to the partners according to their respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+              "reference": "AAOIFI SS 12, Principles of Contractual Rights and Obligations"
+            },
+            {
+              "clause_id": "FAS4.PE2",
+              "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement should be documented in writing and approved by the Shariah Supervisory Board.",
+              "reference": "AAOIFI Governance Standard for Investment Funds"
+            },
+            {
+              "clause_id": "FAS4.DR1",
+              "text": "In addition to the general disclosure requirements outlined in this standard, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+              "reference": "AAOIFI SS 12, Principles of Transparency and Disclosure"
+            }
+          ],
+          "references": [
+            "AAOIFI SS 12",
+            "AAOIFI Governance Standard for Investment Funds",
+            "Shariah resolutions on Shirkah al-ʿAqd structures"
+          ]
+        },
+        "Accounting Section": {
+          "updated_accounting_clauses": [
+            {
+              "clause_id": "FAS4.GA1.ACC",
+              "text": "FAS 4 applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits are governed by the principles outlined herein, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.DM1.ACC",
+              "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be accounted for as a purchase of the diminishing partner's share by the increasing partner. The purchase price shall be based on a fair valuation of the underlying asset at the time of each equity transfer, determined using Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment, in accordance with the initial Musharaka agreement.",
+              "reference": "FAS 4, AAOIFI SS 12, IFRS 13"
+            },
+            {
+              "clause_id": "FAS4.PE1.ACC",
+              "text": "Partner exits from a Shirkah al-ʿAqd real estate fund shall be accounted for based on the specific exit mechanism employed, including: a) Buy-out by remaining partners: Recognize the transaction as an equity transfer at a mutually agreed price or fair market valuation. b) Sale to a third party: Account for the transaction as a sale of equity, recognizing any capital gains or losses. c) Liquidation of the fund: Recognize the distribution of proceeds according to the partners' respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.PE2.ACC",
+              "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement shall be documented in writing and approved by the Shariah Supervisory Board and disclosed in the financial statements.",
+              "reference": "FAS 4, AAOIFI Governance Standard for Investment Funds"
+            },
+            {
+              "clause_id": "FAS4.DR1.ACC",
+              "text": "In addition to the general disclosure requirements outlined in FAS 4, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            }
+          ],
+          "rationale": "The new and updated clauses address the gaps in FAS 4's application to Shirkah al-ʿAqd structures, particularly in real estate funds. They provide specific guidance on partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, ensuring alignment with Shariah principles and best practices. The additions clarify the accounting treatment for these transactions, promoting consistency and transparency. The inclusion of disclosure requirements enhances the understandability of Shirkah al-ʿAqd financial statements.",
+          "references": [
+            "FAS 4",
+            "AAOIFI SS 12",
+            "AAOIFI Governance Standard for Investment Funds",
+            "IFRS 13"
+          ]
+        }
+      },
+      "original_sections": {
+        "Shariah Section": {
+          "shariah_solution": "Original Shariah solution text not provided. Assuming it existed and was less specific.",
+          "original_shariah_clauses": [
+            {
+              "clause_id": "FAS4.GA1",
+              "text": "Original General Applicability clause - less specific.",
+              "reference": "AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.DM1",
+              "text": "Original Diminishing Musharaka clause - less specific.",
+              "reference": "AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.PE1",
+              "text": "Original Partner Exit clause - less specific.",
+              "reference": "AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.PE2",
+              "text": "Original Partner Exit Settlement clause - less specific.",
+              "reference": "AAOIFI Governance Standard for Investment Funds"
+            },
+            {
+              "clause_id": "FAS4.DR1",
+              "text": "Original Disclosure Requirements clause - less specific.",
+              "reference": "AAOIFI SS 12"
+            }
+          ],
+          "references": [
+            "AAOIFI SS 12",
+            "AAOIFI Governance Standard for Investment Funds"
+          ]
+        },
+        "Accounting Section": {
+          "original_accounting_clauses": [
+            {
+              "clause_id": "FAS4.GA1.ACC",
+              "text": "Original General Applicability accounting clause - less specific.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.DM1.ACC",
+              "text": "Original Diminishing Musharaka accounting clause - less specific.",
+              "reference": "FAS 4, AAOIFI SS 12, IFRS 13"
+            },
+            {
+              "clause_id": "FAS4.PE1.ACC",
+              "text": "Original Partner Exit accounting clause - less specific.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            },
+            {
+              "clause_id": "FAS4.PE2.ACC",
+              "text": "Original Partner Exit Settlement accounting clause - less specific.",
+              "reference": "FAS 4, AAOIFI Governance Standard for Investment Funds"
+            },
+            {
+              "clause_id": "FAS4.DR1.ACC",
+              "text": "Original Disclosure Requirements accounting clause - less specific.",
+              "reference": "FAS 4, AAOIFI SS 12"
+            }
+          ],
+          "rationale": "Original rationale was likely broader and less focused on Shirkah al-ʿAqd structures.",
+          "references": [
+            "FAS 4",
+            "AAOIFI SS 12",
+            "AAOIFI Governance Standard for Investment Funds",
+            "IFRS 13"
+          ]
+        }
+      },
+      "change_log": [
+        "Added/Modified FAS4.GA1 to explicitly include Shirkah al-ʿAqd structures in real estate funds and specify the scope of application.",
+        "Added/Modified FAS4.DM1 to provide specific guidance on accounting for equity reduction in diminishing Musharaka within Shirkah al-ʿAqd real estate funds, including valuation methods and profit/loss distribution.",
+        "Added/Modified FAS4.PE1 to detail the accounting treatment for various partner exit mechanisms (buy-out, sale to third party, liquidation) in Shirkah al-ʿAqd real estate funds.",
+        "Added/Modified FAS4.PE2 to emphasize the Shariah-compliant settlement of rights and obligations upon partner exit, requiring Shariah Supervisory Board approval and disclosure.",
+        "Added/Modified FAS4.DR1 to include specific disclosure requirements for Shirkah al-ʿAqd real estate funds, focusing on partner exit mechanisms, valuation methods, profit-sharing ratios, and Shariah compliance.",
+        "Updated Shariah Solution to address gaps in FAS 4's application to Shirkah al-ʿAqd real estate funds.",
+        "Updated Accounting Rationale to reflect the changes made and their purpose.",
+        "Updated References to include relevant standards and resolutions."
+      ],
+      "references": [
+        "FAS 4",
+        "AAOIFI SS 12",
+        "AAOIFI Governance Standard for Investment Funds",
+        "IFRS 13",
+        "Principle of Universal Applicability of Shariah to Financial Transactions",
+        "Principles of Diminishing Musharaka and Fair Valuation",
+        "Principles of Contractual Rights and Obligations",
+        "Principles of Transparency and Disclosure",
+        "Shariah resolutions on Shirkah al-ʿAqd structures"
+      ]
+    },
+    "document": {
+      "pages": [
+        {
+          "title": "Title & Effective Date",
+          "content": {
+            "standard_number": "FAS 4 (Revised)",
+            "title": "Accounting for Musharaka Contracts: Application to Shirkah al-ʿAqd in Real Estate Funds",
+            "example_title": "Accounting for Innovative Digital Assets",
+            "effective_date": "01 January 2025 (Gregorian) / 20 Jumada II 1446 (Hijri)",
+            "issued_by": "AI-Driven Standard Enhancement System (Conceptual)"
+          }
+        },
+        {
+          "title": "Objective, Scope & Key Principles",
+          "content": {
+            "objective": [
+              "To provide specific guidance on the accounting treatment of Shirkah al-ʿAqd structures, particularly those utilized in real estate funds, addressing partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms.",
+              "Clarifies the application of FAS 4 to Shirkah al-ʿAqd and ensures consistent accounting practices."
+            ],
+            "scope": {
+              "applicable_transactions_entities": "This standard applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. It governs the accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits.",
+              "exclusions": "This standard does not cover Musharaka contracts that do not conform to Shariah principles or that are used for purposes other than real estate investment funds without specific modifications."
+            },
+            "key_shariah_principles": [
+              "Principle of Universal Applicability of Shariah to Financial Transactions",
+              "Principles of Diminishing Musharaka and Fair Valuation",
+              "Principles of Contractual Rights and Obligations",
+              "Principles of Transparency and Disclosure"
+            ]
+          }
+        },
+        {
+          "title": "Definitions",
+          "content": {
+            "definitions": [
+              {
+                "term": "Musharaka",
+                "definition": "A partnership arrangement where two or more parties contribute capital to a joint venture, sharing profits and losses in an agreed ratio."
+              },
+              {
+                "term": "Shirkah al-ʿAqd",
+                "definition": "A contractual partnership where two or more parties agree to contribute assets or expertise to a joint venture for the purpose of generating profit."
+              },
+              {
+                "term": "Diminishing Musharaka",
+                "definition": "A form of Musharaka where one partner gradually reduces their equity share, while the other partner increases their share, through periodic purchases."
+              },
+              {
+                "term": "Fair Valuation",
+                "definition": "A determination of the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date."
+              }
+            ]
+          }
+        },
+        {
+          "title": "Recognition and Initial Measurement",
+          "content": {
+            "recognition": {
+              "general_criteria": "A Musharaka or Shirkah al-ʿAqd should be recognized when the agreement is legally binding, and each partner has contributed their agreed-upon share of capital or assets.",
+              "specific_points": "Partner contributions are recognized as equity at the fair value of the assets contributed. In the case of Diminishing Musharaka, the initial equity shares are determined based on the initial agreement."
+            },
+            "initial_measurement": {
+              "general_principle": "Partner contributions are initially measured at fair value at the time of contribution.",
+              "specific_guidance": "Non-cash contributions are measured at their fair market value. If fair value cannot be reliably determined, the carrying amount may be used, subject to Shariah Supervisory Board approval. For Shirkah al-ʿAqd structures, the initial measurement should also consider any upfront fees or costs associated with the formation of the partnership."
+            }
+          }
+        },
+        {
+          "title": "Subsequent Measurement & De-recognition",
+          "content": {
+            "subsequent_measurement": {
+              "measurement_basis": "The underlying assets of the Musharaka or Shirkah al-ʿAqd should be measured according to applicable accounting standards (e.g., IFRS, AAOIFI standards). Equity adjustments in Diminishing Musharaka are measured based on the agreed-upon purchase price at each equity transfer.",
+              "changes_in_value": "Changes in the fair value of underlying assets are recognized in profit or loss, unless specific accounting standards require otherwise (e.g., revaluation model for real estate). Profit or loss from equity transfers in Diminishing Musharaka is recognized in the period it occurs.",
+              "profit_loss_recognition": "Profits and losses are allocated to partners based on the agreed profit-sharing ratio before any equity adjustments in the case of diminishing Musharaka. The distribution should comply with Shariah principles and the partnership agreement."
+            },
+            "de_recognition": {
+              "criteria": "A partner's equity is derecognized upon their exit from the Shirkah al-ʿAqd, through buy-out, sale to a third party, or liquidation of the fund.",
+              "accounting": "Any gain or loss arising on de-recognition (i.e., upon partner exit) is recognized in profit or loss. The remaining partners' equity is adjusted accordingly to reflect the transfer of equity or the distribution of assets upon liquidation."
+            }
+          }
+        },
+        {
+          "title": "Disclosure Requirements",
+          "content": {
+            "qualitative_disclosures": [
+              "Description of the nature of the Shirkah al-ʿAqd activities and underlying assets.",
+              "Key accounting policies adopted for measuring assets, recognizing profit/loss, and accounting for partner exits.",
+              "Information about risk management practices, including Shariah compliance risks.",
+              "Confirmation of Shari'ah compliance, approved by the Shariah Supervisory Board."
+            ],
+            "quantitative_disclosures": [
+              "Breakdown of carrying amounts of assets held within the Shirkah al-ʿAqd.",
+              "Reconciliation of movements in partners' equity, including contributions, profit/loss allocations, and equity transfers.",
+              "Income and expenses recognized by the Shirkah al-ʿAqd.",
+              "Maturity analysis of assets and liabilities.",
+              "Information on any impaired assets and related provisions.",
+              "The specific mechanisms for partner exits and the accounting policies applied to these exits.",
+              "The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs.",
+              "The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure."
+            ]
+          }
+        },
+        {
+          "title": "Basis for Conclusions (Summary)",
+          "content": {
+            "rationale": "These updates to FAS 4 clarify its application to Shirkah al-ʿAqd structures, particularly in real estate funds. They provide specific guidance on partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, promoting consistent accounting practices and transparent financial reporting.",
+            "shariah_compliance": "The standard ensures alignment with Shari'ah principles by requiring adherence to AAOIFI standards, Shariah Supervisory Board approval, and specific Shariah-compliant methods for valuation and profit distribution.",
+            "addressing_gaps": "This standard addresses the user's concern regarding the lack of specific guidance on accounting for Shirkah al-ʿAqd, diminishing Musharaka, and partner exits in the context of real estate funds. It aims to reduce ambiguity and enhance the reliability of financial information for these structures."
+          }
+        }
+      ]
+    },
+    "change_summary": "We've updated FAS 4 to provide clearer guidance on how it applies to *Shirkah al-ʿAqd* structures, especially in real estate funds. The main changes address your questions about *diminishing Musharaka*, *partner contributions*, and *partner exits*.\n\nHere's what's new:\n\n*   **General Applicability (FAS4.GA1):** We've made it clear that FAS 4 *does* apply to Shirkah al-ʿAqd, specifically in real estate funds, covering partner contributions, profit/loss, equity changes, and exits.\n*   **Diminishing Musharaka (FAS4.DM1):** Now there's specific guidance on how to account for equity reductions in diminishing Musharaka within Shirkah al-ʿAqd real estate funds. This includes using fair valuation methods for equity transfers and distributing profits/losses accordingly.\n*   **Partner Exits (FAS4.PE1 & FAS4.PE2):** We've detailed the accounting for different exit scenarios like buy-outs, sales to third parties, and fund liquidation. It also emphasizes the need for Shariah-compliant settlements of rights and obligations upon exit, requiring approval from the Shariah Supervisory Board.\n*   **Disclosures (FAS4.DR1):** Shirkah al-ʿAqd real estate funds now have specific disclosure requirements, including details on partner exit mechanisms, valuation methods, profit-sharing, and Shariah compliance.\n\nThese updates clarify how to apply FAS 4 to Shirkah al-ʿAqd structures in real estate funds, ensuring Shariah compliance and providing more transparent accounting. We have updated the Shariah solutions and accounting rationale in line with these changes.",
+    "fas_diff": {
+      "changes": [],
+      "key_changes_summary": "",
+      "change_statistics": {
+        "additions": 0,
+        "deletions": 0,
+        "modifications": 0
+      }
+    }
+  },
+  "old_outputs": {
+    "updated_fas_document": {
+      "Shariah Section": {
+        "shariah_solution": "To address the gaps in the application of FAS 4 to Shirkah al-ʿAqd real estate funds, especially concerning partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, the following clauses are added/modified to provide clarity and Shariah compliance.",
+        "updated_shariah_clauses": [
+          {
+            "clause_id": "FAS4.GA1",
+            "text": "This standard applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The principles outlined herein govern the accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+            "reference": "AAOIFI SS 12, Principle of Universal Applicability of Shariah to Financial Transactions"
+          },
+          {
+            "clause_id": "FAS4.DM1",
+            "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be treated as a purchase of the diminishing partner's share by the increasing partner. The purchase price should be based on a fair valuation of the underlying asset at the time of each equity transfer, conducted in accordance with Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment.",
+            "reference": "AAOIFI SS 12, Principles of Diminishing Musharaka and Fair Valuation"
+          },
+          {
+            "clause_id": "FAS4.PE1",
+            "text": "Partner exits from a Shirkah al-ʿAqd real estate fund can occur through various mechanisms, including: a) Buy-out by remaining partners: The exiting partner's share is purchased by the remaining partners at a mutually agreed price or a fair market valuation determined by an independent valuer. b) Sale to a third party: The exiting partner sells their share to an external investor, subject to the approval of the remaining partners and in accordance with the fund's governing documents. c) Liquidation of the fund: The fund is liquidated, and the proceeds are distributed to the partners according to their respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+            "reference": "AAOIFI SS 12, Principles of Contractual Rights and Obligations"
+          },
+          {
+            "clause_id": "FAS4.PE2",
+            "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement should be documented in writing and approved by the Shariah Supervisory Board.",
+            "reference": "AAOIFI Governance Standard for Investment Funds"
+          },
+          {
+            "clause_id": "FAS4.DR1",
+            "text": "In addition to the general disclosure requirements outlined in this standard, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+            "reference": "AAOIFI SS 12, Principles of Transparency and Disclosure"
+          }
+        ],
+        "references": [
+          "AAOIFI SS 12",
+          "AAOIFI Governance Standard for Investment Funds",
+          "Shariah resolutions on Shirkah al-ʿAqd structures"
+        ]
+      },
+      "Accounting Section": {
+        "updated_accounting_clauses": [
+          {
+            "clause_id": "FAS4.GA1.ACC",
+            "text": "FAS 4 applies to all forms of Musharaka contracts, including Shirkah al-ʿAqd structures, particularly those utilized in real estate funds. The accounting treatment of partner contributions, profit and loss distribution, equity adjustments, and partner exits are governed by the principles outlined herein, subject to specific provisions outlined below for Shirkah al-ʿAqd.",
+            "reference": "FAS 4, AAOIFI SS 12"
+          },
+          {
+            "clause_id": "FAS4.DM1.ACC",
+            "text": "In the context of diminishing Musharaka within a Shirkah al-ʿAqd real estate fund, the equity reduction of a partner shall be accounted for as a purchase of the diminishing partner's share by the increasing partner. The purchase price shall be based on a fair valuation of the underlying asset at the time of each equity transfer, determined using Shariah-compliant valuation methods. Any profit or loss arising from this transfer shall be recognized in the period it occurs and distributed according to the agreed profit-sharing ratio before the equity adjustment, in accordance with the initial Musharaka agreement.",
+            "reference": "FAS 4, AAOIFI SS 12, IFRS 13"
+          },
+          {
+            "clause_id": "FAS4.PE1.ACC",
+            "text": "Partner exits from a Shirkah al-ʿAqd real estate fund shall be accounted for based on the specific exit mechanism employed, including: a) Buy-out by remaining partners: Recognize the transaction as an equity transfer at a mutually agreed price or fair market valuation. b) Sale to a third party: Account for the transaction as a sale of equity, recognizing any capital gains or losses. c) Liquidation of the fund: Recognize the distribution of proceeds according to the partners' respective equity shares after settling all liabilities. The accounting treatment for each scenario should reflect the substance of the transaction, recognizing any capital gains or losses realized by the exiting partner and adjusting the remaining partners' equity accordingly.",
+            "reference": "FAS 4, AAOIFI SS 12"
+          },
+          {
+            "clause_id": "FAS4.PE2.ACC",
+            "text": "Upon a partner's exit, all outstanding rights and obligations between the exiting partner and the Shirkah al-ʿAqd must be settled in a Shariah-compliant manner. This includes the settlement of any accrued profits or losses, outstanding contributions, and any other financial obligations. The settlement shall be documented in writing and approved by the Shariah Supervisory Board and disclosed in the financial statements.",
+            "reference": "FAS 4, AAOIFI Governance Standard for Investment Funds"
+          },
+          {
+            "clause_id": "FAS4.DR1.ACC",
+            "text": "In addition to the general disclosure requirements outlined in FAS 4, Shirkah al-ʿAqd real estate funds must disclose the following: a) The specific mechanisms for partner exits and the accounting policies applied to these exits. b) The valuation methods used for determining the fair value of the underlying real estate assets, particularly in the context of diminishing Musharaka and partner buy-outs. c) The profit-sharing ratios and the mechanism for adjusting these ratios as equity shares change in a diminishing Musharaka structure. d) A statement confirming compliance with Shariah principles, duly approved by the Shariah Supervisory Board.",
+            "reference": "FAS 4, AAOIFI SS 12"
+          }
+        ],
+        "rationale": "The new and updated clauses address the gaps in FAS 4's application to Shirkah al-ʿAqd structures, particularly in real estate funds. They provide specific guidance on partner contributions, equity reduction in diminishing Musharaka, and partner exit mechanisms, ensuring alignment with Shariah principles and best practices. The additions clarify the accounting treatment for these transactions, promoting consistency and transparency. The inclusion of disclosure requirements enhances the understandability of Shirkah al-ʿAqd financial statements.",
+        "references": [
+          "FAS 4",
+          "AAOIFI SS 12",
+          "AAOIFI Governance Standard for Investment Funds",
+          "IFRS 13"
+        ]
+      }
+    },
+    "change_log": [
+      "Added/Modified FAS4.GA1 to explicitly include Shirkah al-ʿAqd structures in real estate funds and specify the scope of application.",
+      "Added/Modified FAS4.DM1 to provide specific guidance on accounting for equity reduction in diminishing Musharaka within Shirkah al-ʿAqd real estate funds, including valuation methods and profit/loss distribution.",
+      "Added/Modified FAS4.PE1 to detail the accounting treatment for various partner exit mechanisms (buy-out, sale to third party, liquidation) in Shirkah al-ʿAqd real estate funds.",
+      "Added/Modified FAS4.PE2 to emphasize the Shariah-compliant settlement of rights and obligations upon partner exit, requiring Shariah Supervisory Board approval and disclosure.",
+      "Added/Modified FAS4.DR1 to include specific disclosure requirements for Shirkah al-ʿAqd real estate funds, focusing on partner exit mechanisms, valuation methods, profit-sharing ratios, and Shariah compliance.",
+      "Updated Shariah Solution to address gaps in FAS 4's application to Shirkah al-ʿAqd real estate funds.",
+      "Updated Accounting Rationale to reflect the changes made and their purpose.",
+      "Updated References to include relevant standards and resolutions."
+    ],
+    "references": [
+      "FAS 4",
+      "AAOIFI SS 12",
+      "AAOIFI Governance Standard for Investment Funds",
+      "IFRS 13",
+      "Principle of Universal Applicability of Shariah to Financial Transactions",
+      "Principles of Diminishing Musharaka and Fair Valuation",
+      "Principles of Contractual Rights and Obligations",
+      "Principles of Transparency and Disclosure",
+      "Shariah resolutions on Shirkah al-ʿAqd structures"
+    ],
+    "detailed_changes": [],
+    "change_statistics": {
+      "additions": 0,
+      "deletions": 0,
+      "modifications": 0
+    }
+  },
+  "diff": 
