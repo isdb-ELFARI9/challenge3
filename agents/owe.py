@@ -16,6 +16,7 @@ from schemas.stsa import STSAInput, STSAOutput
 from schemas.fas_diff import FASDiffInput
 from utils.fas_utils import get_fas_namespace
 import json
+from utils.db import save_pipeline_run
 
 # Utility to map FAS to namespace
 
@@ -164,7 +165,15 @@ def owe_agent(user_prompt: str) -> dict:
         reasoning_trace
     )
     print(f"Detailed changes saved to: {changes_file}")
-    
+
+    data_to_save = {
+        "user_prompt": user_prompt,
+        "fas_number": uiria_out.identified_FAS,
+        "reasoning_trace": reasoning_trace, # This now includes all outputs including fas_diff
+        "change_file": changes_file # Save the final proposed markdown
+    }
+    run_id = save_pipeline_run(user_prompt, uiria_out.identified_FAS, data_to_save)
+    print(f"Pipeline run saved with ID: {run_id}")
     # Compose the final output
     return {
         "document": final_document,
