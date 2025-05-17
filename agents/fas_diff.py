@@ -208,7 +208,6 @@ def fas_diff_agent(input_data: FASDiffInput) -> FASDiffOutput:
     print("prompt for fas diff agent", prompt)
     
     # Get LLM analysis
-    from utils.llm import get_llm_response
     analysis_raw = call_gemini_llm(prompt)
 
     print("analysis for fas diff agent", analysis_raw)
