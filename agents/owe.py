@@ -28,7 +28,9 @@ def get_fas_namespace(fas):
     mapping = {
         '4': 'fas_4',
         '7': 'fas_7',
+        '8': 'fas_8',
         '10': 'fas_10',
+        '16': 'fas_16',
         '28': 'fas_28',
         '32': 'fas_32',
     }
@@ -45,7 +47,7 @@ async def owe_agent(user_prompt: str) -> dict:
      # Create output directory
     output_dir = "./outputs"
      # Configure the FAS standards to analyze
-    fas_standards = ["fas_4"]
+    fas_standards = ["fas_4", "fas_8", "fas_16", "fas_7", "fas_10","fas_28", "fas_32"]
     
     # Set the LLM provider
     selected_provider = "openai"  # Change to "gemini" to use Google's model
