@@ -161,50 +161,49 @@ def fas_diff_agent(input_data: FASDiffInput) -> FASDiffOutput:
     """
     
     # Prepare prompt for the LLM to identify specific text changes
-    prompt = f"""
-    You are the final agent in a system that analyzes and updates Financial Accounting Standards (FAS).
-    
-    Previous agents have analyzed FAS {input_data.fas_number} and proposed the following updates:
-    {proposed_updates}
-    
-    Change summary:
-    {change_summary}
+    prompt = f"""You are the final agent in a system that analyzes and updates Financial Accounting Standards (FAS). Your primary role is to precisely identify textual changes based on the detailed proposals and reasoning from previous agents and you can propose changes that are not mentioned in the reasoning trace , but i want the old fas document to inlude all changes correctly in all of its sections eacg with detailed justification.
 
-    and you can find the justification for each change in the reasoning trace:
-    {reasoning_summary}
-    
-    The original FAS document is:
-    {original_fas_file}
-    
-    Your task is to:
-    1. Identify the EXACT sentences and paragraphs in the original document that need to change
-    2. Provide the new text that should replace them
-    3. Match each change with a justification from the reasoning trace
-    4. Categorize each change as addition, deletion, or modification
-    5. Identify which section each change belongs to
-    
-    You MUST respond with a JSON object in this exact format:
-    {{
-        "changes": [
-            {{
-                "old_text": "The exact original text that was changed",
-                "new_text": "The exact new text that replaced it",
-                "justification": "Detailed justification for the change",
-                "section_id": "Section identifier",
-                "change_type": "addition/deletion/modification"
-            }},
-            // Additional changes
-        ],
-        "key_changes_summary": "A markdown-formatted summary of key changes",
-        "change_statistics": {{
-            "additions": 0,
-            "deletions": 0,
-            "modifications": 0
+        Previous agents have analyzed FAS {input_data.fas_number} and proposed the following updates:
+        {proposed_updates}
+
+        Change summary:
+        {change_summary}
+
+        Reasoning trace (contains detailed justifications, Shariah basis, accounting logic, and references for the updates):
+        {reasoning_summary}
+
+        The original FAS document is:
+        {original_fas_file}
+
+        Your task is to:
+        1. Based on the difference between the "original_fas_file" and the implied *updated* content from "proposed_updates" and "change_summary", identify the EXACT sentences, clauses, or paragraphs in the "original_fas_file" that need to change AND SCAN ALL THE OLD FILE AND UPDATE EVERYTHING THAT NEEDS TO BE UPDATED.
+        2. Provide the EXACT new text that should replace the "old_text" or be inserted (for additions).
+        3. For *each individual change* ("old_text" to "new_text"), you MUST extract and detail the specific justification from the "reasoning_summary". **Formulate a concise, clear justification for *this specific text modification/addition/deletion*, referencing the Shariah basis, accounting logic, gap addressed, and potential context implications as found in the "reasoning_summary". If the reasoning mentions specific sources for *this particular point*, include them in the justification text.** Do NOT just copy the whole rationale; extract the *reason for this specific line change* or add it , the most important thing is that the reasonning of the justification is detailed with sources and logical and really relevant to the change.
+        4. Categorize each change accurately as "addition", "deletion", or "modification".
+        5. Identify which section or clause the change belongs to ("section_id").
+
+        You MUST respond with a JSON object in this exact format:
+        {{
+            "changes": [
+                {{
+                    "old_text": "The exact original text that was changed or the anchor text if an addition is made after it (e.g., 'Insert after this sentence:'). For deletions, this is the text removed.",
+                    "new_text": "The exact new text that replaced 'old_text'. For deletions, this is an empty string ''. For additions, this is the text added.",
+                    "justification": "detailed justification for *this specific text change* derived from the reasoning_summary or add it if it's not in the reasoning_summary and with detailed sources if exists. Example: 'Modified text to explicitly include digital assets as 'Mal mutaqawwim' based on SPIA's guidance derived from AAOIFI SS 21, addressing the foundational gap in asset definition for potential crypto activities mentioned in the reasoning.'",
+                    "section_id": "Section identifier (e.g., 'Section 3.1 Definitions', 'Clause 4.5')",
+                    "change_type": "addition/deletion/modification"
+                }},
+                // Additional changes
+            ],
+            "key_changes_summary": "A markdown-formatted summary of the key areas updated and why, drawing from the justifications above.",
+            "change_statistics": {{
+                "additions": 0,
+                "deletions": 0,
+                "modifications": 0
+            }}
         }}
-    }}
-    
-    Focus ONLY on extracting and formatting the changes - the decisions about what to change have already been made.
-    """
+
+        Focus ONLY on extracting or adding the changes, precisely formatting the changes, and *enriching* the justification for *each specific text change* using the provided reasoning trace. The decisions about what to change have already been made by previous agents.
+        """
 
     print("prompt for fas diff agent", prompt)
     

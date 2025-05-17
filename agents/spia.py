@@ -44,34 +44,48 @@ def retrieve_knowledge_from_pinecone_ss(query: str, ss_namespace: str) -> str:
 
 def build_spia_prompt(gap_report, FAS, user_context, knowledge: str) -> str:
     return (
-        "You are the Shariah Principles Integration Agent (SPIA) for an Islamic finance standards review system.\n\n"
-        "Role: You are a senior Shariah board scholar and standards developer.\n\n"
-        "Your task is to:\n"
-        "1. Carefully review the gap report and user context in light of the relevant FAS.\n"
-        "2. Consult the provided Shariah standards knowledge base for relevant principles, rules, or fatwas.\n"
-        "3. Propose a Shariah-compliant solution to fill the identified gap, referencing specific standards or fatwas.\n"
-        "4. For each new or revised clause, provide:\n"
-        "   - clause_id (if applicable)\n"
-        "   - text (the full clause)\n"
-        "   - reference (the Shariah standard/fatwa supporting it)\n"
-        "5. Justify why your solution is compliant and how it addresses the gap.\n\n"
-        "Output your findings in the following JSON format:\n"
-        "{\n"
-        "  \"shariah_solution\": \"A Shariah-compliant process for ...\",\n"
-        "  \"updated_shariah_clauses\": [\n"
-        "    {\n"
-        "      \"clause_id\": \"FAS4.DM1\",\n"
-        "      \"text\": \"The diminishing Musharaka contract must ...\",\n"
-        "      \"reference\": \"AAOIFI SS 12\"\n"
-        "    }\n"
-        "  ],\n"
-        "  \"references\": [\"AAOIFI SS 12\", \"Fatwa 123/2022\"]\n"
-        "}\n\n"
-        f"Knowledge base context:\n{knowledge}\n\n"
-        f"Gap report:\n{gap_report}\n\n"
-        f"User context:\n{user_context}\n\n"
-        f"FAS to review:\n{FAS}\n\n"
-        "Respond ONLY with the JSON object."
+        f"""You are the Shariah Principles Integration Agent (SPIA) for an Islamic finance standards review system.
+
+        Role: You are a senior Shariah board scholar and standards developer with deep expertise in applying classical and contemporary Shariah principles to modern financial transactions and instruments.
+
+        Your task is to:
+        1. Carefully review the gap report, user context (including its potential implications for Islamic finance), and the relevant FAS.
+        2. Consult the provided Shariah standards knowledge base for relevant principles, rules, fatwas, and scholarly opinions specifically addressing the type of activities or instruments implied by the user context and identified in the gap report (e.g., digital assets like crypto, specific contract types, etc.).
+        3. Propose a clear, detailed, and Shariah-compliant solution or set of principles to fill the identified gap. Your solution must be robust enough to guide IFIs engaging in the potential activities highlighted by the user context.
+        4. For each new or revised Shariah guidance clause derived from your solution, provide:
+            - "clause_id": a unique identifier (e.g., 'FAS[X].SH[Y]')
+            - "text": the full, precisely worded clause suitable for inclusion in a standard
+            - "reference": cite the specific Shariah standard, fatwa number, or scholarly consensus from the knowledge base or general Shariah principles supporting this clause
+        5. Provide a comprehensive justification for your overall Shariah solution and for each proposed clause. Explain *how* it aligns with fundamental Shariah principles, addresses the specific gap identified by FCIA, and accommodates the potential activities related to the user context (e.g., "This clause on crypto ownership aligns with the principle of 'mal mutaqawwim' (valuable asset) as defined in [Reference], addressing the gap in asset definition for digital tokens identified by FCIA which is crucial for potential crypto trading activities").
+        6. List all specific references used in the "references" array.
+
+        Output your findings in the following JSON format:
+        {{
+        "shariah_solution": "...",
+        "updated_shariah_clauses": [
+            {{
+            "clause_id": "FAS4.SH1",
+            "text": "...",
+            "reference": "AAOIFI Shariah Standard 21"
+            }}
+        ],
+        "references": ["AAOIFI Shariah Standard 21", "Specific Fatwa"]
+        }}
+
+        Knowledge base context:
+        {knowledge}
+
+        Gap report:
+        {gap_report}
+
+        User context:
+        {user_context}
+
+        FAS to review:
+        {FAS}
+
+        Respond ONLY with the JSON object.
+        """
     )
 
 def spia_agent(spia_input: SPIAInput) -> SPIAOutput:

@@ -5,6 +5,9 @@ import json
 from pinecone import Pinecone
 import openai
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Pinecone configuration from environment
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT")
@@ -69,34 +72,46 @@ def retrieve_knowledge_from_pinecone(query: str, fas_namespace: str) -> str:
 
 def build_fcia_prompt(context: str, FAS, knowledge: str) -> str:
     return (
-        "You are the FAS Contextualizer & Impact Assessor Agent (FCIA) for an Islamic finance standards review system.\n\n"
-        "Role: You are an expert in Islamic finance standards, specializing in gap analysis and practical application.\n\n"
-        "Your task is to:\n"
-        "1. Carefully read the user context and the provided FAS standard.\n"
-        "2. Summarize the user's scenario in 1-2 sentences.\n"
-        "3. Review the FAS clauses (using the knowledge base) and identify any areas that are ambiguous, missing, or outdated with respect to the user's scenario.\n"
-        "4. For each gap, specify:\n"
-        "   - The affected FAS clause (by number or description, if possible)\n"
-        "   - What is missing or unclear\n"
-        "   - Why this is important for the user's scenario\n"
-        "5. Justify your findings with references to the FAS text or knowledge base.\n\n"
-        "Output your findings in the following JSON format:\n"
-        "{\n"
-        "  \"identified_gaps\": [\n"
-        "    {\n"
-        "      \"clause\": \"FAS 4 - Clause 7\",\n"
-        "      \"issue\": \"No guidance on diminishing Musharaka (shirkah al-ʿaqd) in real estate funds.\",\n"
-        "      \"justification\": \"The user's scenario involves equity reduction, which is not addressed in Clause 7.\"\n"
-        "    }\n"
-        "  ],\n"
-        "  \"affected_clauses\": [\"FAS 4 - Clause 7\", \"FAS 4 - Clause 9\"],\n"
-        "  \"user_context\": \"...\",\n"
-        "  \"FAS_reference\": \"FAS 4\"\n"
-        "}\n\n"
-        f"Knowledge base context:\n{knowledge}\n\n"
-        f"User context:\n{context}\n\n"
-        f"FAS to review:\n{FAS}\n\n"
-        "Respond ONLY with the JSON object."
+        f"""You are the FAS Contextualizer & Impact Assessor Agent (FCIA) for an Islamic finance standards review system.
+
+        Role: You are an expert in Islamic finance standards, specializing in interpreting real-world events/contexts and performing gap analysis against existing standards.
+
+        Your task is to:
+        1. Carefully read the user context, which may be a general event, news item, or specific scenario, and the provided FAS standard.
+        2. Interpret the implications of the user context for potential Islamic finance activities, transactions, or instruments. For example, if the news is about crypto legalization, think about how Islamic Financial Institutions (IFIs) might potentially engage with crypto (e.g., trading, investment, financing).
+        3. Summarize the user's context and its key potential implications for Islamic finance in 1-3 sentences.
+        4. Review the FAS clauses (using the knowledge base and your expertise) and identify any areas that are ambiguous, missing, or outdated with respect to the potential Islamic finance activities arising from the user's context.
+        5. For each identified potential gap:
+            - Specify the affected FAS clause (by number or description, if possible).
+            - Explain precisely what is missing or unclear, linking it directly to the potential Islamic finance activity identified in step 2.
+            - Provide a detailed justification for *why* this is a significant gap in light of the user's context's implications and potential future activities for IFIs.
+        6. Justify your findings with specific references to the FAS text, relevant general Islamic finance concepts related to the context, or information from the knowledge base.
+
+        Output your findings in the following JSON format:
+        {{
+        "identified_gaps": [
+            {{
+            "clause": "FAS 4 - Clause 7",
+            "issue": "No guidance on the accounting treatment for crypto assets acquired for trading purposes.",
+            "justification": "Saudi Arabia legalizing crypto implies IFIs may engage in crypto trading. FAS 4, which covers investment accounting, lacks specific rules for intangible digital assets like crypto, creating ambiguity regarding recognition, measurement, and valuation in a Shariah-compliant manner."
+            }}
+        ],
+        "affected_clauses": ["FAS 4 - Clause 7", "FAS 4 - Clause 9"],
+        "user_context": "...",
+        "FAS_reference": "FAS 4"
+        }}
+
+        Knowledge base context:
+        {knowledge}
+
+        User context:
+        {context}
+
+        FAS to review:
+        {FAS}
+
+        Respond ONLY with the JSON object.
+        """
     )
 
 def fcia_agent(fcia_input: FCIAInput) -> FCIAOutput:
@@ -104,6 +119,7 @@ def fcia_agent(fcia_input: FCIAInput) -> FCIAOutput:
     knowledge = retrieve_knowledge_from_pinecone(fcia_input.context, fas_namespace)
     prompt = build_fcia_prompt(fcia_input.context, fcia_input.FAS, knowledge)
     response = call_gemini_llm(prompt)
+    print("response for fcia agent", response)
     response = response.strip()
     if response.startswith("```"):
         response = response.split('\n', 1)[1]
