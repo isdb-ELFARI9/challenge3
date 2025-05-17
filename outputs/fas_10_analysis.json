@@ -1,21 +1,31 @@
 {
   "analysis_summary": {
-    "overall_assessment": "The context highlights the growing application of diminishing Musharaka in real estate funds, indicating a gap in FAS 4 regarding the treatment of shirkah al-ʿaqd structures, particularly concerning partner contributions and exits.",
+    "overall_assessment": "The context highlights a potential gap in FAS 4 regarding the treatment of partner contributions and exits in diminishing Musharaka structures, suggesting a need for clearer guidance.",
     "key_metrics": {
-      "gaps_identified_count": 1,
+      "gaps_identified_count": 2,
       "similarities_identified_count": 0
     }
   },
   "identified_gaps": [
     {
-      "description": "FAS 4 lacks specific guidance on the treatment of partner contributions and exits in diminishing Musharaka structures.",
-      "justification": "The context refers to the use of diminishing Musharaka in real estate funds but notes a lack of coverage for shirkah al-ʿaqd in FAS 4. This indicates a gap in addressing the unique financial implications of partner contributions and exits under this structure, which is critical for accurate financial reporting.",
+      "description": "FAS 4 lacks guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+      "justification": "The context indicates that diminishing Musharaka is increasingly utilized, but FAS 4 does not address the specific mechanisms of partner contributions within this structure. This omission could lead to inconsistent accounting practices.",
       "references": [
-        "Context mentions the increasing use of diminishing Musharaka in real estate funds and the lack of coverage in FAS 4.",
-        "No specific guidance found in FAS knowledge regarding the treatment of partner contributions and exits in diminishing Musharaka."
+        "Context mentions the use of diminishing Musharaka in real estate funds.",
+        "FAS 4 does not explicitly cover the treatment of shirkah al-ʿaqd structures or their implications for partner contributions."
       ],
-      "chain_of_thought": "1. Evaluated the context for financial implications specific to diminishing Musharaka. 2. Compared with FAS 4 and identified absence of guidance on shirkah al-ʿaqd. 3. Concluded that this lack of coverage presents a significant gap.",
+      "chain_of_thought": "1. Reviewed the context regarding diminishing Musharaka. 2. Noted the absence of specific guidance in FAS 4 related to partner contributions. 3. Concluded it represents a significant gap.",
       "score": 0.9
+    },
+    {
+      "description": "FAS 4 does not provide direction on the treatment of partner exits in diminishing Musharaka arrangements.",
+      "justification": "The context raises a question about how to handle partner exits in the diminishing Musharaka structure, indicating a lack of guidance in FAS 4 on this critical aspect.",
+      "references": [
+        "Context questions the treatment of partner exits in diminishing Musharaka.",
+        "FAS 4 does not address the implications of partner exits in shirkah al-ʿaqd structures."
+      ],
+      "chain_of_thought": "1. Analyzed the context for issues related to partner exits. 2. Identified the lack of guidance in FAS 4 regarding this matter. 3. Determined it constitutes a significant gap.",
+      "score": 0.85
     }
   ],
   "identified_similarities": [],
