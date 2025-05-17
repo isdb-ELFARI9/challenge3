@@ -215,14 +215,16 @@ async def owe_agent(user_prompt: str) -> dict:
 
     data_to_save = {
         "user_prompt": user_prompt,
-        "fas_number": fas_number,
-        "reasoning_trace": reasoning_trace, # This now includes all outputs including fas_diff
-        "change_file": changes_file # Save the final proposed markdown
+        "change_summary": change_summary,
+        "reasoning_trace": {k: v for k, v in reasoning_trace.items() if k != "fas_diff"},
+        "diff":diff_analysis,
+        "change_statistics": diff_analysis.change_statistics
     }
     run_id = save_pipeline_run(user_prompt, fas_number, data_to_save)
     print(f"Pipeline run saved with ID: {run_id}")
     # Compose the final output
     return {
+        "user_prompt": user_prompt,
         "change_summary": change_summary,
         "reasoning_trace": {k: v for k, v in reasoning_trace.items() if k != "fas_diff"},
         "diff":diff_analysis,
