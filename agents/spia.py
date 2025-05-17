@@ -88,12 +88,18 @@ def build_spia_prompt(gap_report, FAS, user_context, knowledge: str) -> str:
         """
     )
 
-def spia_agent(spia_input: SPIAInput) -> SPIAOutput:
+def spia_agent(spia_input: SPIAInput, llm_name="gemini") -> SPIAOutput:
     # For this agent, always use the SS index and the namespace should be based on the most relevant SS (simulate with first in knowledge_indexes)
     ss_namespace = spia_input.knowledge_indexes[0] if spia_input.knowledge_indexes else None
     knowledge = retrieve_knowledge_from_pinecone_ss(str(spia_input.gap_report), ss_namespace)
     prompt = build_spia_prompt(spia_input.gap_report, spia_input.FAS, spia_input.user_context, knowledge)
-    response = call_gemini_llm(prompt)
+    if llm_name == "gemini":
+        response=call_gemini_llm(prompt)
+    elif llm_name == "deepseek":
+        response=call_gemini_llm(prompt)
+    else:
+        response=call_gemini_llm(prompt)
+
     response = response.strip()
     if response.startswith("```"):
         response = response.split('\n', 1)[1]

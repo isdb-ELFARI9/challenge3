@@ -19,7 +19,6 @@ class ChangeRecord(BaseModel):
         }
 
 class FASDiffInput(BaseModel):
-    old_fas_markdown: str = Field(..., description="Content of the old FAS markdown file")
     new_fas_markdown: str = Field(..., description="Content of the new FAS markdown file")
     fas_number: str = Field(..., description="FAS number being analyzed")
     context: str = Field(..., description="Context about why changes were made")

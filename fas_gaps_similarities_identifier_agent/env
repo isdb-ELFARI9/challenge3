@@ -1,0 +1,24 @@
+OPENAI_API_KEY=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
+
+PINECONE_API_KEY=pcsk_5twmnx_M5a8t3S64JrBBvCpt24AtgxAm9gtpmreTpaFPQ97bmCbcBCUQ2brmB7SwPLtWKe
+
+
+PINECONE_ENVIRONMENT=gcp-starter
+PINECONE_INDEX_FAS=fas-embeddings-index
+PINECONE_INDEX_SS=ss-embeddings-index
+
+
+# LLM Configuration
+LLM_PROVIDER=gemini
+GEMINI_API_KEY=AIzaSyDNdA4L95Otwc2s_qPvWnJlh7H278Xk71c
+GEMINI_MODEL_NAME=gemini-2.0-flash
+TEMPERATURE=0.7
+MAX_TOKENS=1000
+
+# Agent Configuration
+AGENT_MAX_ITERATIONS=5
+VERBOSE=True
+
+# Application Configuration
+APP_HOST=0.0.0.0
+APP_PORT=8000

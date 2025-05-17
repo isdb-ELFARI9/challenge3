@@ -144,33 +144,32 @@ def fas_diff_agent(input_data: FASDiffInput) -> FASDiffOutput:
 
     stsa_changes = reasoning_trace.get("stsa", {}).get("change_log", ["No changes recorded"])
     fcia_gaps = reasoning_trace.get("fcia", {}).get("identified_gaps", "No gaps identified")
-    spia_solution = reasoning_trace.get("spia", {}).get("shariah_solution", "No Shariah solution provided")
-    arda_rationale = reasoning_trace.get("arda", {}).get("rationale", "No accounting rationale provided")
-    reasoning_summary = f"""
-    IDENTIFIED GAPS: 
-    {fcia_gaps}
+    # spia_solution = reasoning_trace.get("spia", {}).get("shariah_solution", "No Shariah solution provided")
+    # arda_rationale = reasoning_trace.get("arda", {}).get("rationale", "No accounting rationale provided")
+    # reasoning_summary = f"""
+    # IDENTIFIED GAPS: 
+    # {fcia_gaps}
     
-    SHARIAH SOLUTION:
-    {spia_solution}
+    # SHARIAH SOLUTION:
+    # {spia_solution}
     
-    ACCOUNTING RATIONALE:
-    {arda_rationale}
+    # ACCOUNTING RATIONALE:
+    # {arda_rationale}
     
-    PROPOSED CHANGES:
-    {json.dumps(stsa_changes, indent=2) if isinstance(stsa_changes, (list, dict)) else stsa_changes}
-    """
+    # PROPOSED CHANGES:
+    # {json.dumps(stsa_changes, indent=2) if isinstance(stsa_changes, (list, dict)) else stsa_changes}
+    # """
     
     # Prepare prompt for the LLM to identify specific text changes
-    prompt = f"""You are the final agent in a system that analyzes and updates Financial Accounting Standards (FAS). Your primary role is to precisely identify textual changes based on the detailed proposals and reasoning from previous agents and you can propose changes that are not mentioned in the reasoning trace , but i want the old fas document to inlude all changes correctly in all of its sections eacg with detailed justification.
+    prompt = f"""You are the final agent in a system that analyzes and updates Financial Accounting Standards (FAS). Your primary role is to precisely identify textual changes in the original fas documented based on the detailed proposals and reasoning from previous agents 
 
-        Previous agents have analyzed FAS {input_data.fas_number} and proposed the following updates:
+        Previous agents have analyzed FAS {input_data.fas_number} and proposed the following updates that most use only these updates in your task :
         {proposed_updates}
 
         Change summary:
         {change_summary}
 
-        Reasoning trace (contains detailed justifications, Shariah basis, accounting logic, and references for the updates):
-        {reasoning_summary}
+        
 
         The original FAS document is:
         {original_fas_file}
@@ -181,6 +180,9 @@ def fas_diff_agent(input_data: FASDiffInput) -> FASDiffOutput:
         3. For *each individual change* ("old_text" to "new_text"), you MUST extract and detail the specific justification from the "reasoning_summary". **Formulate a concise, clear justification for *this specific text modification/addition/deletion*, referencing the Shariah basis, accounting logic, gap addressed, and potential context implications as found in the "reasoning_summary". If the reasoning mentions specific sources for *this particular point*, include them in the justification text.** Do NOT just copy the whole rationale; extract the *reason for this specific line change* or add it , the most important thing is that the reasonning of the justification is detailed with sources and logical and really relevant to the change.
         4. Categorize each change accurately as "addition", "deletion", or "modification".
         5. Identify which section or clause the change belongs to ("section_id").
+        6. the most impotring thing is that the old fas document to inlude all changes correctly in all of its sections each with detailed justification and refrences if exists and make the most possible ones 
+        7. don't neglect any change
+        
 
         You MUST respond with a JSON object in this exact format:
         {{

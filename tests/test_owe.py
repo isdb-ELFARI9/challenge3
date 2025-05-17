@@ -1,3 +1,5 @@
+import asyncio
+import pytest
 from agents.owe import owe_agent
 import json
 from datetime import datetime
@@ -11,13 +13,13 @@ def test_owe_agent():
     )
     
     # Run the pipeline
-    result = owe_agent(user_prompt)
+    result = asyncio.run(owe_agent(user_prompt))
     
     # Basic assertions
-    assert "document" in result
+    assert "diff" in result
     assert "change_summary" in result
     assert "reasoning_trace" in result
-    
+    assert "change_statistics" in result
     # Create timestamp for unique filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = f"test_results/owe_test_result_{timestamp}.json"

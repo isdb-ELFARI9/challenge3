@@ -112,11 +112,16 @@ def build_arda_prompt(shariah_update, FAS, user_context, knowledge: str) -> str:
         """
     )
 
-def arda_agent(arda_input: ARDAInput) -> ARDAOutput:
+def arda_agent(arda_input: ARDAInput, llm_name="gemini") -> ARDAOutput:
     fas_namespace = get_fas_namespace(arda_input.FAS)
     knowledge = retrieve_knowledge_from_pinecone_fas(str(arda_input.shariah_update), fas_namespace)
     prompt = build_arda_prompt(arda_input.shariah_update, arda_input.FAS, arda_input.user_context, knowledge)
-    response = call_gemini_llm(prompt)
+    if llm_name == "gemini":
+        response=call_gemini_llm(prompt)
+    elif llm_name == "deepseek":
+        response=call_gemini_llm(prompt)
+    else:
+        response=call_gemini_llm(prompt)
     response = response.strip()
     if response.startswith("```"):
         response = response.split('\n', 1)[1]

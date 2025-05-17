@@ -67,14 +67,8 @@ def build_stsa_prompt(updated_shariah_section: dict,
     return f"""You are an expert in Islamic finance standards and technical documentation. Your task is to integrate the provided Shariah and Accounting updates into the relevant FAS text and structure, ensuring logical flow, clarity, and consistency with the existing standard's style.
 
     FAS: {fas}
-    User Context: {user_context}
+    you find here the user context and gap summary and also the updated shariah clauses and accounting clauses: {user_context}
     Potential Implications: [Synthesize the potential implications identified by FCIA from the user context]
-
-    Updated Shariah Section Proposal:
-    {updated_shariah_section}
-
-    Updated Accounting Section Proposal:
-    {updated_accounting_section}
 
     Relevant Knowledge:
     {knowledge}
@@ -125,8 +119,6 @@ def stsa_agent(stsa_input: STSAInput) -> STSAOutput:
     query = f"{stsa_input.updated_shariah_section}\n{stsa_input.updated_accounting_section}"
     knowledge = retrieve_knowledge_from_pinecone_fas(query, fas_namespace)
     prompt = build_stsa_prompt(
-        stsa_input.updated_shariah_section,
-        stsa_input.updated_accounting_section,
         stsa_input.FAS,
         stsa_input.user_context,
         knowledge
