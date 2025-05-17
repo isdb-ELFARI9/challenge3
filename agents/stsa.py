@@ -64,34 +64,42 @@ def build_stsa_prompt(updated_shariah_section: dict,
                      fas: str,
                      user_context: str,
                      knowledge: str) -> str:
-    return f"""
-    You are an expert in Islamic finance standards. Your task is to update the FAS text and structure based on the provided updates.
-    
+    return f"""You are an expert in Islamic finance standards and technical documentation. Your task is to integrate the provided Shariah and Accounting updates into the relevant FAS text and structure, ensuring logical flow, clarity, and consistency with the existing standard's style.
+
     FAS: {fas}
     User Context: {user_context}
-    
-    Updated Shariah Section:
-    {json.dumps(updated_shariah_section, indent=2)}
-    
-    Updated Accounting Section:
-    {json.dumps(updated_accounting_section, indent=2)}
-    
+    Potential Implications: [Synthesize the potential implications identified by FCIA from the user context]
+
+    Updated Shariah Section Proposal:
+    {updated_shariah_section}
+
+    Updated Accounting Section Proposal:
+    {updated_accounting_section}
+
     Relevant Knowledge:
     {knowledge}
-    
+
+    Your task involves:
+    1. Carefully reviewing the proposed Shariah and Accounting clauses/updates.
+    2. Determining the most appropriate location within the existing FAS structure to insert or modify text to incorporate these updates. Consider existing sections on definitions, recognition, measurement, presentation, disclosure, and Shariah basis.
+    3. Integrating the proposed clauses/principles seamlessly into the FAS language and formatting. This may involve adding new paragraphs, modifying existing sentences, or creating new subsections.
+    4. Creating a detailed "change_log" that clearly explains *what* was changed (or added), *where* it was changed (section/clause), and *why* this change was made, linking it back to the gap identified, the Shariah solution, and the accounting rule necessary to address the potential implications of the user context (e.g., "Added new subsection 4.15 on Crypto Assets recognition to address the gap related to potential digital asset trading activities arising from Saudi Arabia's legalization, based on the SPIA's Shariah permissibility guidance and ARDA's proposed fair value accounting rule").
+    5. Identifying and listing the "original_sections" that were modified or are directly relevant to the changes for comparison.
+    6. Identifying all relevant "references" cited in the Shariah and Accounting updates.
+
     Please provide a response in the following JSON format:
     {{
         "all_updated_sections": {{
-            "section_id": "updated content",
+            "section_id": "Content of the entire section after update (including new or modified text)",
             ...
         }},
         "original_sections": {{
-            "section_id": "original content",
+            "section_id": "Original content of the section before update",
             ...
         }},
         "change_log": [
-            "Change 1",
-            "Change 2",
+            "Change 1: Added Clause X.Y on [Topic] to Section Z. Reason: Implements Shariah ruling on [Principle] and Accounting rule on [Treatment] to address gap regarding [Gap] stemming from user context implications on [Potential Activity]."
+            "Change 2: Modified paragraph A.B in Section C. Reason: Updated terminology/clarified scope to include [New Concept] as required by [Shariah/Accounting Update Reference]."
             ...
         ],
         "references": [
@@ -100,12 +108,15 @@ def build_stsa_prompt(updated_shariah_section: dict,
             ...
         ]
     }}
-    
+
     Ensure that:
-    1. All sections are properly identified
-    2. Changes are clearly documented
-    3. References are properly cited
-    4. Original sections are preserved for comparison
+    1. All affected sections are properly identified in "all_updated_sections" and "original_sections".
+    2. Changes are clearly documented in the "change_log" with justification linked to the update process (gap -> Shariah -> Accounting -> Context Implications).
+    3. References are properly cited in the "references" array.
+    4. Original sections are preserved in "original_sections" for comparison where changes occurred.
+    5. The updated text in "all_updated_sections" is logically integrated and maintains the FAS's standard formatting/style.
+
+    Respond ONLY with the JSON object.
     """
 
 def stsa_agent(stsa_input: STSAInput) -> STSAOutput:
