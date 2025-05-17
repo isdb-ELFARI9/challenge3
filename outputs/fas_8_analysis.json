@@ -1,12 +1,23 @@
 {
   "analysis_summary": {
-    "overall_assessment": "The provided context focuses on the failure of a budget reconciliation bill in the U.S., which is not directly related to the AAOIFI FAS standards, particularly FAS 8. There are no direct gaps or similarities identified.",
+    "overall_assessment": "The context highlights a gap in FAS 4 regarding the treatment of diminishing Musharaka in real estate funds, particularly in partner contributions and exits.",
     "key_metrics": {
-      "gaps_identified_count": 0,
+      "gaps_identified_count": 1,
       "similarities_identified_count": 0
     }
   },
-  "identified_gaps": [],
+  "identified_gaps": [
+    {
+      "description": "FAS 4 does not adequately address the treatment of partner contributions and exits in diminishing Musharaka structures.",
+      "justification": "The context indicates the use of diminishing Musharaka in real estate funds but notes that FAS 4 lacks coverage of shirkah al-ʿaqd structures. Without specific guidance on accounting for partner contributions and exits in this context, there is a notable gap in the standards.",
+      "references": [
+        "Context mentions the increasing use of diminishing Musharaka in real estate funds but lacks guidance from FAS 4.",
+        "FAS knowledge section does not provide specific guidance on shirkah al-ʿaqd structures or their implications for partner contributions and exits."
+      ],
+      "chain_of_thought": "1. Reviewed context for financial implications related to diminishing Musharaka. 2. Identified that partner contributions and exits are not specifically addressed in FAS 4. 3. Concluded this oversight creates a gap in accounting standards for these structures.",
+      "score": 0.9
+    }
+  ],
   "identified_similarities": [],
   "target_fas_id": "fas_8"
 }

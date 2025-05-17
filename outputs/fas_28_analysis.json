@@ -1,12 +1,33 @@
 {
   "analysis_summary": {
-    "overall_assessment": "The provided context discusses a budget reconciliation bill's failure in the U.S. Congress, which does not directly relate to the principles outlined in AAOIFI FAS 28, leading to no significant gaps or similarities identified.",
+    "overall_assessment": "The provided context highlights a gap in the coverage of partner contributions and exits in diminishing Musharaka structures under FAS 4, while also indicating a lack of specific guidance on shirkah al-ʿaqd.",
     "key_metrics": {
-      "gaps_identified_count": 0,
+      "gaps_identified_count": 2,
       "similarities_identified_count": 0
     }
   },
-  "identified_gaps": [],
+  "identified_gaps": [
+    {
+      "description": "FAS 4 lacks guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+      "justification": "The context notes the increasing use of diminishing Musharaka in real estate funds, indicating a need for clear accounting treatment of partner contributions. However, FAS 4 does not specifically address these structures, leading to ambiguity in accounting practices.",
+      "references": [
+        "Context mentions the use of diminishing Musharaka in real estate funds and the need for guidance on partner contributions.",
+        "FAS 4 does not provide specific guidance on shirkah al-ʿaqd structures or diminishing Musharaka."
+      ],
+      "chain_of_thought": "1. Identified the context discussing diminishing Musharaka in real estate. 2. Noted the absence of guidance in FAS 4 regarding this structure. 3. Concluded that this represents a significant gap in accounting treatment.",
+      "score": 0.9
+    },
+    {
+      "description": "FAS 4 does not address the exit mechanisms for partners in diminishing Musharaka arrangements.",
+      "justification": "The context raises concerns about how to treat partner exits in diminishing Musharaka, but FAS 4 lacks specific provisions for such exit strategies, creating potential inconsistencies in financial reporting.",
+      "references": [
+        "Context raises the question of how to treat partner exits in diminishing Musharaka.",
+        "FAS 4 does not cover the exit mechanisms for partners in these structures."
+      ],
+      "chain_of_thought": "1. Recognized the context's focus on partner exits in diminishing Musharaka. 2. Compared it with FAS 4 and found no relevant guidance. 3. Concluded this represents another significant gap.",
+      "score": 0.8
+    }
+  ],
   "identified_similarities": [],
   "target_fas_id": "fas_28"
 }
