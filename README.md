@@ -26,9 +26,13 @@ The API will be available at `http://localhost:8000`
 
 ## API Usage
 
-### Enhance Standard
-
-**Endpoint:** `POST /enhance-standard`
+| Method | Path                       | Purpose                                                             |
+| ------ | -------------------------- | ------------------------------------------------------------------- |
+| POST   | `/enhance-standard`        | Run the AAOIFI enhancement pipeline on a user prompt.               |
+| GET    | `/pipeline-runs`           | List every stored pipeline run (most-recent first).                 |
+| GET    | `/pipeline-run/{run_id}`   | Retrieve the full record—including FAS markdown—for one run.        |
+| GET/HEAD | `/ping`                 | Lightweight health-check for uptime monitors.                       |
+ example :
 
 **Request Body:**
 ```json
@@ -49,6 +53,19 @@ The API returns a JSON object containing:
 - `document`: The complete standards document
 - `change_summary`: A user-friendly summary of changes
 - `reasoning_trace`: The full reasoning process
+
+## Tests
+there is a large suit of pytest tests that test all agents you can run them with
+```bash
+pytest .|tests|name_of_test
+```
+
+Focused test: Refinement Agent
+
+The Refinement Agent (FRA) reviews specific changes based on feedback and reasoning traces.
+```bash
+python tests/test_fra_agent.py
+```
 
 ## API Documentation
 
