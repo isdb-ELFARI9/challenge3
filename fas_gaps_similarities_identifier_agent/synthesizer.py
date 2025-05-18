@@ -6,6 +6,8 @@ from fas_gaps_similarities_identifier_agent.llm import get_llm, LLMProvider
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
+from utils.write_to_file import write_to_file
+
 # Make sure to import State, FASAnalysisResult, LLMProvider if they are used elsewhere or adjust as needed.
 # from data_models import State, FASAnalysisResult # Assuming these are still relevant for other parts not shown
 # from llm import LLMProvider # Assuming this is still relevant
@@ -147,10 +149,16 @@ Based on the above analysis results, provide a final detailed verdict structured
         ("system", system_prompt),
         ("human", human_prompt)
     ])
+
+    write_to_file("prompts.txt", "synthesizer prompt \n")
+    write_to_file("prompts.txt", prompt_template)
     
     chain = prompt_template | llm | StrOutputParser()
     print("Invoking LLM for synthesis...")
     raw_synthesis_output = chain.invoke({})
+    write_to_file("prompts.txt", "synthesizer output \n")
+    write_to_file("prompts.txt", raw_synthesis_output)
+
     print(f"Raw Synthesis Output (first 300 chars): {raw_synthesis_output[:300]}...")
     
     try:

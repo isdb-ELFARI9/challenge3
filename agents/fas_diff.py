@@ -4,6 +4,7 @@ import re
 from typing import List, Dict, Any
 from schemas.fas_diff import FASDiffInput, FASDiffOutput, ChangeRecord
 from utils.llm import call_gemini_llm, get_llm_response
+from utils.write_to_file import write_to_file
 
 def read_original_fas_file(fas_number: str) -> str:
     """
@@ -210,7 +211,11 @@ def fas_diff_agent(input_data: FASDiffInput) -> FASDiffOutput:
     print("prompt for fas diff agent", prompt)
     
     # Get LLM analysis
+    write_to_file("prompts.txt", "fas diff agent prompt\n")
+    write_to_file("prompts.txt", prompt)
     analysis_raw = call_gemini_llm(prompt)
+    write_to_file("prompts.txt", "fas diff agent response\n")
+    write_to_file("prompts.txt", analysis_raw)
 
     print("analysis for fas diff agent", analysis_raw)
     try:

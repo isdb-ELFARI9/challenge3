@@ -2,11 +2,13 @@ from agents.spia import spia_agent
 from agents.arda import arda_agent
 from schemas.spia import SPIAInput
 from schemas.arda import ARDAInput
+from utils.write_to_file import write_to_file
 
 def board_agent(fas, user_context, gap_report, knowledge_indexes, llm_name="gemini"):
     """
     Each 'board member' (agent) performs both SPIA and ARDA analysis and returns a proposal.
     """
+    write_to_file("prompts.txt", "board agent prompt\n")
     # Step 1: Shariah Proposal
     spia_input = SPIAInput(
         FAS=fas,
@@ -36,6 +38,17 @@ def board_agent(fas, user_context, gap_report, knowledge_indexes, llm_name="gemi
         "updated_accounting_clauses": arda_result.updated_accounting_clauses,
         "references": list(set(spia_result.references + arda_result.references)),
     })
+    write_to_file("prompts.txt", "one board agent response\n")
+    write_to_file("prompts.txt",{
+        "llm_name": llm_name,
+        "shariah_solution": spia_result.shariah_solution,
+        "updated_shariah_clauses": spia_result.updated_shariah_clauses,
+        "accounting_rationale": arda_result.rationale,
+        "updated_accounting_clauses": arda_result.updated_accounting_clauses,
+        "references": list(set(spia_result.references + arda_result.references)),
+    } )
+
+
 
     return {
         "shariah_solution": spia_result.shariah_solution,

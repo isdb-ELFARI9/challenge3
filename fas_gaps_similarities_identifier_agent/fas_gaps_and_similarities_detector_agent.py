@@ -10,6 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 from fas_gaps_similarities_identifier_agent.data_models import State, FASAnalysisResult
 from typing import TypedDict, List, Dict, Any, Optional
 from fas_gaps_similarities_identifier_agent.fas_retriever_agent import FASRetriever
+from utils.write_to_file import write_to_file
 
 
 def fas_gaps_and_similarities_detector_agent(state: State, target_fas_id: str = "fas_4", llm_provider: LLMProvider = "gemini", 
@@ -59,6 +60,10 @@ def fas_gaps_and_similarities_detector_agent(state: State, target_fas_id: str = 
         target_fas_id,
         knowledge
     )
+    write_to_file("prompts.txt", "one fas gap analyzer agent prompt\n")
+    
+
+
 
     llm = get_llm(llm_provider)
 
@@ -67,11 +72,16 @@ def fas_gaps_and_similarities_detector_agent(state: State, target_fas_id: str = 
         ("system", system_message_content),
         ("human", context) # The actual context is passed here
     ])
+    write_to_file("prompts.txt",prompt_template )
 
     # Run the LLM chain
     chain = prompt_template | llm | StrOutputParser()
     print("Invoking LLM for FAS analysis...")
     raw_llm_output = chain.invoke({"context": context}) # Pass context as input variable
+    write_to_file("prompts.txt", "one fas gap analyzer agent response\n")
+    write_to_file("prompts.txt",raw_llm_output )
+
+
     print(f"Raw LLM Output (first 200 chars): {raw_llm_output[:200]}...")
 
     #  Parse the output and update state

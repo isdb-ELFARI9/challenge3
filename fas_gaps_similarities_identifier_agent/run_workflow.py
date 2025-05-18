@@ -7,6 +7,7 @@ from fas_gaps_similarities_identifier_agent.parallel_agent_runner import run_par
 from fas_gaps_similarities_identifier_agent.synthesizer import synthesize_results, format_synthesis_results
 from fas_gaps_similarities_identifier_agent.llm import LLMProvider
 from fas_gaps_similarities_identifier_agent.config import supported_fas_list
+from utils.write_to_file import write_to_file
 
 # Load environment variables
 load_dotenv()
@@ -39,6 +40,11 @@ async def run_complete_workflow(
         llm_provider,
         output_dir
     )
+
+    write_to_file("prompts.txt", "latest fas results\n")
+    write_to_file("prompts.txt",fas_results )
+
+
     
     print(f"\nAll FAS analyses completed. Running synthesis...")
     
@@ -51,6 +57,10 @@ async def run_complete_workflow(
             llm_provider,
             synthesis_output_file
         )
+        write_to_file("prompts.txt", "synthesis final result\n")
+
+        write_to_file("prompts.txt", synthesis_result)
+
         
         # Step 3: Format the results for human-readable output
         # formatted_output = format_synthesis_results(synthesis_result, fas_results)

@@ -5,6 +5,8 @@ import json
 from pinecone import Pinecone
 import openai
 
+from utils.write_to_file import write_to_file
+
 # Pinecone configuration from environment
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENVIRONMENT = os.getenv("PINECONE_ENVIRONMENT")
@@ -93,6 +95,7 @@ def spia_agent(spia_input: SPIAInput, llm_name="gemini") -> SPIAOutput:
     ss_namespace = spia_input.knowledge_indexes[0] if spia_input.knowledge_indexes else None
     knowledge = retrieve_knowledge_from_pinecone_ss(str(spia_input.gap_report), ss_namespace)
     prompt = build_spia_prompt(spia_input.gap_report, spia_input.FAS, spia_input.user_context, knowledge)
+    write_to_file("prompts.txt", prompt)
     if llm_name == "gemini":
         response=call_gemini_llm(prompt)
     elif llm_name == "deepseek":

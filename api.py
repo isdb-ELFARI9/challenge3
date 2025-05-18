@@ -6,6 +6,7 @@ from fastapi import FastAPI, HTTPException, Path
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from agents.owe import owe_agent
+from utils.write_to_file import write_to_file
 
 # Database configuration
 DATABASE_FILE = "pipeline_runs.db"
@@ -118,6 +119,7 @@ async def enhance_standard(user_prompt: UserPrompt):
 @app.get("/pipeline-runs")
 async def get_all_runs():
     try:
+       
         # Get all pipeline runs from the database
         results = get_all_pipeline_runs()
         
@@ -157,7 +159,12 @@ async def get_run(run_id: int = Path(..., description="The ID of the pipeline ru
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving pipeline run: {str(e)}")
 
+# ✅ Health check route for UptimeRobot or debugging
+@app.api_route("/ping", methods=["GET", "HEAD"])
+def ping():
+    return {"status": "alive"}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+    port = int(os.environ.get("PORT", 8000))  # fallback to 8000 locally
+    uvicorn.run(app, host="0.0.0.0", port=port)

@@ -1,4 +1,5 @@
 from utils.llm import call_gemini_llm
+from utils.write_to_file import write_to_file
 
 
 def supervisor_agent_llm(proposals):
@@ -47,7 +48,12 @@ def supervisor_agent_llm(proposals):
     )
 
     # Call your preferred LLM (GPT or Gemini) for supervisor
+    write_to_file("prompts.txt", "supervisor agent prompt\n")
+    write_to_file("prompts.txt", prompt)
     response_text = call_gemini_llm(prompt)  # or call_gemini_llm(prompt)
+    write_to_file("prompts.txt", "supervisor agent response\n")
+    write_to_file("prompts.txt", response_text)
+
 
     # Try to parse JSON from response_text
     import json

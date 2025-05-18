@@ -21,6 +21,7 @@ from schemas.fas_diff import FASDiffInput
 from utils.fas_utils import get_fas_namespace
 import json
 from utils.db import save_pipeline_run
+from utils.write_to_file import write_to_file
 
 # Utility to map FAS to namespace
 
@@ -52,6 +53,9 @@ async def owe_agent(user_prompt: str) -> dict:
     # Set the LLM provider
     selected_provider = "openai"  # Change to "gemini" to use Google's model
     os.makedirs(output_dir, exist_ok=True)
+    write_to_file("prompts.txt", "user prompt \n")
+
+    write_to_file("prompts.txt", user_prompt)
     fas_gaps = await run_complete_workflow(user_prompt,fas_standards,selected_provider,output_dir)
     print("fas_gaps", fas_gaps["synthesis_result"])
     # uiria_out: UIRIAOutput = uiria_agent(user_prompt)

